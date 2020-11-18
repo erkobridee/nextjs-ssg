@@ -1,21 +1,21 @@
-const wp = require('webpack');
+const wp = require('webpack')
 
-const isProduction = 'production' === process.env.NODE_ENV;
+const isProduction = 'production' === process.env.NODE_ENV
 
-const basePath = isProduction ? '/nextjs-ssg-hello' : '';
+const basePath = isProduction ? '/nextjs-ssg-hello' : ''
 
 const webpack = (config) => {
-  config.plugins.push(
-    new wp.DefinePlugin({
-      'process.env.ASSETS_PREFIX': JSON.stringify(basePath),
-    })
-  );
+	config.plugins.push(
+		new wp.DefinePlugin({
+			'process.env.ASSETS_PREFIX': JSON.stringify(basePath),
+		})
+	)
 
-  return config;
-};
+	return config
+}
 
 module.exports = {
-  reactStrictMode: true,
-  basePath,
-  webpack,
-};
+	reactStrictMode: true,
+	basePath,
+	webpack,
+}
