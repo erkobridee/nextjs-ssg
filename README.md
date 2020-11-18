@@ -41,6 +41,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - [How to Use Github Actions to Deploy a Next.js Website to AWS S3 | freeCodeCamp](https://www.freecodecamp.org/news/how-to-use-github-actions-to-deploy-a-next-js-website-to-aws-s3/)
 
+- [Next.js app on Github Pages | ITNEXT](https://itnext.io/next-js-app-on-github-pages-768020f2b65e)
+
 ### pt_Br
 
 - [[YouTube] Como inicio meus apps com ReactJS? Next.js, TypeScript, ESLint e Styled Components | Code/Drops #50](https://www.youtube.com/watch?v=1nVUfZg2dSA)
