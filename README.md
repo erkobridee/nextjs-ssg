@@ -5,9 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
+npm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -28,3 +26,27 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Useful links
+
+- [Next.js](https://nextjs.org/)
+
+  - [Next.js v10](https://nextjs.org/blog/next-10)
+
+- [[YouTube] Next.js Static Site Generation (SSG)](https://www.youtube.com/watch?v=_W-tcVzu-Ms)
+
+- [[YouTube] Next.js Static Site Generation (SSG) Tutorial](https://www.youtube.com/watch?v=pY0vWYLDDco)
+
+- [[YouTube] Learn Next.js in One Video - Fundamentals of Next.js](https://www.youtube.com/watch?v=tt3PUvhOVzo)
+
+- [How to Use Github Actions to Deploy a Next.js Website to AWS S3 | freeCodeCamp](https://www.freecodecamp.org/news/how-to-use-github-actions-to-deploy-a-next-js-website-to-aws-s3/)
+
+### pt_Br
+
+- [[YouTube] Como inicio meus apps com ReactJS? Next.js, TypeScript, ESLint e Styled Components | Code/Drops #50](https://www.youtube.com/watch?v=1nVUfZg2dSA)
+
+- [[YouTube] Serverless com ReactJS e Next.js na Vercel | Code/Drops #54](https://www.youtube.com/watch?v=Cz55Jmhfw84)
+
+- [[YouTube] Essa feature fez o Next.js ser o framework mais popular | Code/Drops #59](https://www.youtube.com/watch?v=u1kCtkVR7cE)
+
+- [[YouTube] Como fazer SEO com React, NextJS e Deploy estático feat. Dicas de Performance | Pokedex](https://www.youtube.com/watch?v=c8mVlakBESE)
