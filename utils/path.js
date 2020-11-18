@@ -1,6 +1,6 @@
 const assetsPrefix = `${process.env.ASSETS_PREFIX}`;
 
-export const updateUrlPath = (path) =>
+export const updateAssetsPrefix = (path) =>
   assetsPrefix ? `${assetsPrefix}/${path}` : path;
 
-export default updateUrlPath;
+export default updateAssetsPrefix;
