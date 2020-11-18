@@ -43,6 +43,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - [Next.js app on Github Pages | ITNEXT](https://itnext.io/next-js-app-on-github-pages-768020f2b65e)
 
+- [Start a clean Next.js project with TypeScript, ESLint and Prettier from scratch | PAULIN TROGNON](https://paulintrognon.fr/blog/typescript-prettier-eslint-next-js)
+
+  - [[GitHub] paulintrognon/next-typescript](https://github.com/paulintrognon/next-typescript)
+
 ### pt_Br
 
 - [[YouTube] Como inicio meus apps com ReactJS? Next.js, TypeScript, ESLint e Styled Components | Code/Drops #50](https://www.youtube.com/watch?v=1nVUfZg2dSA)
