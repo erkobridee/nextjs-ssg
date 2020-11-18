@@ -1,8 +1,8 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
-import { updateAssetsPrefix } from 'utils/path'
+import { updateAssetsPrefix } from 'utils/path';
 
-import styles from 'styles/Home.module.scss'
+import styles from 'styles/Home.module.scss';
 
 export default function Home() {
 	return (
@@ -68,5 +68,5 @@ export default function Home() {
 				</a>
 			</footer>
 		</div>
-	)
+	);
 }
