@@ -1,5 +1,7 @@
 import Head from 'next/head';
 
+import { updateUrlPath } from 'utils/path';
+
 import styles from 'styles/Home.module.scss';
 
 export default function Home() {
@@ -7,7 +9,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href="favicon.ico" />
+        <link rel="icon" href={updateUrlPath('favicon.ico')} />
       </Head>
 
       <main className={styles.main}>
@@ -58,7 +60,11 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          <img
+            src={updateUrlPath('vercel.svg')}
+            alt="Vercel Logo"
+            className={styles.logo}
+          />
         </a>
       </footer>
     </div>
