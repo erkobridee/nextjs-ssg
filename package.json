@@ -3,9 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "next:dev": "next dev",
+    "next:export": "next export",
+    "next:build": "next build",
+    "next:start": "next start",
+    "start": "run-s next:dev",
+    "clean:next-cache": "rimraf .next",
+    "clean:next-output": "rimraf out",
+    "clean": "run-p clean:next-cache clean:next-output",
+    "build:ci": "run-s clean next:build next:export",
+    "build": "run-s clean next:build",
+    "serve-nextjs-output": "serve out -l 3000",
+    "serve": "run-s build next:start",
+    "serve:ci": "run-s build:ci serve-nextjs-output"
   },
   "dependencies": {
     "next": "10.0.1",
@@ -13,6 +23,9 @@
     "react-dom": "17.0.1"
   },
   "devDependencies": {
-    "sass": "^1.29.0"
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "sass": "^1.29.0",
+    "serve": "^11.3.2"
   }
 }
