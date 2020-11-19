@@ -17,6 +17,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
@@ -32,6 +33,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [Next.js](https://nextjs.org/)
 
   - [Next.js v10](https://nextjs.org/blog/next-10)
+
+  - [Create a Next.js App](https://nextjs.org/learn/basics/create-nextjs-app)
+
+  - [Markdown/MDX with Next.js](https://nextjs.org/blog/markdown)
 
 - [[YouTube] Next.js Static Site Generation (SSG)](https://www.youtube.com/watch?v=_W-tcVzu-Ms)
 
