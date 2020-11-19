@@ -52,6 +52,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
   - [[GitHub] paulintrognon/next-typescript](https://github.com/paulintrognon/next-typescript)
 
+- [What is Static Site Generation? How Next.js Uses SSG for Dynamic Web Apps | freeCodeCamp](https://www.freecodecamp.org/news/static-site-generation-with-nextjs/)
+
 ### pt_Br
 
 - [[YouTube] Como inicio meus apps com ReactJS? Next.js, TypeScript, ESLint e Styled Components | Code/Drops #50](https://www.youtube.com/watch?v=1nVUfZg2dSA)
