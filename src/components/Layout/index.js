@@ -1,7 +1,7 @@
 import cs from 'classnames';
 import Head from 'next/head';
 
-import NewPageLink from 'components/NewPageLink';
+import NewPageLink from 'components/Link/NewPage';
 
 import { updateAssetsPrefix } from 'utils/path';
 

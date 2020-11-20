@@ -1,4 +1,4 @@
-import InternalLink from 'components/InternalLink';
+import InternalLink from 'components/Link/Internal';
 import Layout from 'components/Layout';
 
 import styles from 'styles/Home.module.scss';

@@ -1,4 +1,4 @@
-import InternalLink from 'components/InternalLink';
+import InternalLink from 'components/Link/Internal';
 
 export const getStaticPaths = async () => {
 	let paths = [];

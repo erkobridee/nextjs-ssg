@@ -1,7 +1,6 @@
 import Head from 'next/head';
 
-import InternalLink from 'components/InternalLink';
-import NewPageLink from 'components/NewPageLink';
+import { InternalLink, NewPageLink } from 'components/Link';
 
 import styles from './index.module.scss';
 
