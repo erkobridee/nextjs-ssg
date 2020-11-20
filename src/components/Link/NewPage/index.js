@@ -3,11 +3,11 @@
 import React from 'react';
 
 export const NewPageLink = React.forwardRef(
-	({ target, rel, ...otherProps }, ref) => {
-		target = '_blank';
-		rel = 'noopener noreferrer';
-		return <a {...{ ...otherProps, ref, target, rel }} />;
-	}
+  ({ target, rel, ...otherProps }, ref) => {
+    target = '_blank';
+    rel = 'noopener noreferrer';
+    return <a {...{ ...otherProps, ref, target, rel }} />;
+  }
 );
 
 export default NewPageLink;
