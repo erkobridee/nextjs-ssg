@@ -20,13 +20,17 @@ export const JsonPlaceholder = () => (
 			</h1>
 			<ul>
 				<li>
-					<Link href="/jsonplaceholder/users">Users</Link>
+					<Link href="/jsonplaceholder/users">
+						<a className="link">Users</a>
+					</Link>
 				</li>
 				{/* <li>2</li>
 				<li>3</li> */}
 			</ul>
 			<hr />
-			<Link href="/">Back</Link>
+			<Link href="/">
+				<a className="link">Back</a>
+			</Link>
 		</main>
 	</div>
 );

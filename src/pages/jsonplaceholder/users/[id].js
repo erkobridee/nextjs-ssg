@@ -44,7 +44,9 @@ export const User = ({ user }) => {
 				<code>{JSON.stringify(user, null, 2)}</code>
 			</pre>
 			<hr />
-			<Link href="/jsonplaceholder/users">Back</Link>
+			<Link href="/jsonplaceholder/users">
+				<a className="link">Back</a>
+			</Link>
 		</>
 	);
 };

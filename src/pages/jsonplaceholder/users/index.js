@@ -19,12 +19,16 @@ export const Users = ({ users }) => (
 		<ul>
 			{users.map((user) => (
 				<li key={user.id}>
-					<Link href={`/jsonplaceholder/users/${user.id}`}>{user.name}</Link>
+					<Link href={`/jsonplaceholder/users/${user.id}`}>
+						<a className="link">{user.name}</a>
+					</Link>
 				</li>
 			))}
 		</ul>
 		<hr />
-		<Link href="/jsonplaceholder">Back</Link>
+		<Link href="/jsonplaceholder">
+			<a className="link">Back</a>
+		</Link>
 	</>
 );
 
