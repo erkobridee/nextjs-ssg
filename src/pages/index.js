@@ -1,5 +1,7 @@
 import Head from 'next/head';
-import Link from 'next/link';
+
+import InternalLink from 'components/InternalLink';
+import NewPageLink from 'components/NewPageLink';
 
 import { updateAssetsPrefix } from 'utils/path';
 
@@ -51,24 +53,19 @@ export const Home = () => (
 			</div>
 
 			<hr />
-			<Link href="/jsonplaceholder">
-				<a className="link">JSON Placeholder</a>
-			</Link>
+
+			<InternalLink href="/jsonplaceholder">JSON Placeholder</InternalLink>
 		</main>
 
 		<footer className={styles.footer}>
-			<a
-				href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
+			<NewPageLink href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app">
 				Powered by{' '}
 				<img
 					src={updateAssetsPrefix('vercel.svg')}
 					alt="Vercel Logo"
 					className={styles.logo}
 				/>
-			</a>
+			</NewPageLink>
 		</footer>
 	</div>
 );

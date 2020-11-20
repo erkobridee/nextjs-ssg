@@ -23,6 +23,7 @@
 		"deploy": "run-s build:ci deploy:gh-pages"
 	},
 	"dependencies": {
+		"classnames": "^2.2.6",
 		"next": "10.0.1",
 		"react": "17.0.1",
 		"react-dom": "17.0.1"

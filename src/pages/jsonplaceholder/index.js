@@ -1,5 +1,7 @@
 import Head from 'next/head';
-import Link from 'next/link';
+
+import InternalLink from 'components/InternalLink';
+import NewPageLink from 'components/NewPageLink';
 
 import styles from './index.module.scss';
 
@@ -10,27 +12,19 @@ export const JsonPlaceholder = () => (
 		</Head>
 		<main>
 			<h1>
-				<a
-					href="https://jsonplaceholder.typicode.com/"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
+				<NewPageLink href="https://jsonplaceholder.typicode.com/">
 					JSON Placeholder
-				</a>
+				</NewPageLink>
 			</h1>
 			<ul>
 				<li>
-					<Link href="/jsonplaceholder/users">
-						<a className="link">Users</a>
-					</Link>
+					<InternalLink href="/jsonplaceholder/users">Users</InternalLink>
 				</li>
 				{/* <li>2</li>
 				<li>3</li> */}
 			</ul>
 			<hr />
-			<Link href="/">
-				<a className="link">Back</a>
-			</Link>
+			<InternalLink href="/">Back</InternalLink>
 		</main>
 	</div>
 );

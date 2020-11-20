@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import InternalLink from 'components/InternalLink';
 
 export const getStaticPaths = async () => {
 	let paths = [];
@@ -44,9 +44,7 @@ export const User = ({ user }) => {
 				<code>{JSON.stringify(user, null, 2)}</code>
 			</pre>
 			<hr />
-			<Link href="/jsonplaceholder/users">
-				<a className="link">Back</a>
-			</Link>
+			<InternalLink href="/jsonplaceholder/users">Back</InternalLink>
 		</>
 	);
 };

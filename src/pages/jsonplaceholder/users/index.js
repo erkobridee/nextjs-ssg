@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import InternalLink from 'components/InternalLink';
 
 export const getStaticProps = async () => {
 	let users = [];
@@ -19,16 +19,14 @@ export const Users = ({ users }) => (
 		<ul>
 			{users.map((user) => (
 				<li key={user.id}>
-					<Link href={`/jsonplaceholder/users/${user.id}`}>
-						<a className="link">{user.name}</a>
-					</Link>
+					<InternalLink href={`/jsonplaceholder/users/${user.id}`}>
+						{user.name}
+					</InternalLink>
 				</li>
 			))}
 		</ul>
 		<hr />
-		<Link href="/jsonplaceholder">
-			<a className="link">Back</a>
-		</Link>
+		<InternalLink href="/jsonplaceholder">Back</InternalLink>
 	</>
 );
 
