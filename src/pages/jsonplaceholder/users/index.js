@@ -1,3 +1,5 @@
+import LayoutJsonPlaceholder from 'components/Layout/JsonPlaceholder';
+
 import InternalLink from 'components/Link/Internal';
 
 export const getStaticProps = async () => {
@@ -14,7 +16,7 @@ export const getStaticProps = async () => {
 };
 
 export const Users = ({ users }) => (
-	<>
+	<LayoutJsonPlaceholder>
 		<h1>Users</h1>
 		<ul>
 			{users.map((user) => (
@@ -27,7 +29,7 @@ export const Users = ({ users }) => (
 		</ul>
 		<hr />
 		<InternalLink href="/jsonplaceholder">Back</InternalLink>
-	</>
+	</LayoutJsonPlaceholder>
 );
 
 export default Users;

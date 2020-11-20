@@ -1,18 +1,10 @@
-import InternalLink from 'components/Link/Internal';
 import Layout from 'components/Layout';
+import TopNav from 'components/TopNav/Home';
 
 import styles from 'styles/Home.module.scss';
 
 export const Home = () => (
-	<Layout
-		className={styles.content}
-		header={
-			<div>
-				Static Site Samples:{' '}
-				<InternalLink href="/jsonplaceholder">JSON Placeholder</InternalLink>
-			</div>
-		}
-	>
+	<Layout className={styles.content} header={<TopNav />}>
 		<h1 className={styles.title}>
 			Hello <a href="https://nextjs.org">Next.js</a> SSG
 		</h1>

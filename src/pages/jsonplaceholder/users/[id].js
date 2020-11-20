@@ -1,3 +1,5 @@
+import LayoutJsonPlaceholder from 'components/Layout/JsonPlaceholder';
+
 import InternalLink from 'components/Link/Internal';
 
 export const getStaticPaths = async () => {
@@ -38,14 +40,14 @@ export const getStaticProps = async ({ params }) => {
 
 export const User = ({ user }) => {
 	return (
-		<>
+		<LayoutJsonPlaceholder>
 			<h1>User: {user.name}</h1>
 			<pre>
 				<code>{JSON.stringify(user, null, 2)}</code>
 			</pre>
 			<hr />
 			<InternalLink href="/jsonplaceholder/users">Back</InternalLink>
-		</>
+		</LayoutJsonPlaceholder>
 	);
 };
 
