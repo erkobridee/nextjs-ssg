@@ -38,6 +38,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
   - [Markdown/MDX with Next.js](https://nextjs.org/blog/markdown)
 
+  - [Data Fetching | Nextjs Documentation](https://nextjs.org/docs/basic-features/data-fetching)
+
+    - [getStaticProps](https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation) - fetch data at build time
+
+    - [getStaticPaths](https://nextjs.org/docs/basic-features/data-fetching#getstaticpaths-static-generation) - generate static files
+
+  - [[GitHub] next.js/examples/gh-pages/](https://github.com/vercel/next.js/tree/master/examples/gh-pages)
+
 - [[YouTube] Next.js Static Site Generation (SSG)](https://www.youtube.com/watch?v=_W-tcVzu-Ms)
 
 - [[YouTube] Next.js Static Site Generation (SSG) Tutorial](https://www.youtube.com/watch?v=pY0vWYLDDco)
