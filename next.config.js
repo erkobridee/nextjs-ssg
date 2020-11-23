@@ -16,14 +16,8 @@ const webpack = (config) => {
   return config;
 };
 
-const i18n = {
-  locales: ['en', 'es', 'pt'],
-  defaultLocale: 'en',
-};
-
 module.exports = {
   reactStrictMode: true,
   basePath,
   webpack,
-  i18n,
 };
