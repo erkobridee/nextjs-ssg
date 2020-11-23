@@ -1,10 +1,14 @@
-import InternalLink from 'components/Link/Internal';
+import TopNavBase from 'components/TopNav/Base';
+
+const menuLabel = 'Static Site Samples:';
+
+const menuItems = [
+  { label: 'JSON Placeholder', href: '/jsonplaceholder' },
+  { label: 'i18n', href: '/i18n' },
+];
 
 export const TopNavHome = () => (
-  <div>
-    Static Site Samples:{' '}
-    <InternalLink href="/jsonplaceholder">JSON Placeholder</InternalLink>
-  </div>
+  <TopNavBase label={menuLabel} items={menuItems} />
 );
 
 export default TopNavHome;
