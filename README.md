@@ -44,6 +44,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
     - [getStaticPaths](https://nextjs.org/docs/basic-features/data-fetching#getstaticpaths-static-generation) - generate static files
 
+  - [Internationalized Routing | Nextjs Documentation](https://nextjs.org/docs/advanced-features/i18n-routing) - [example](https://github.com/vercel/next.js/tree/master/examples/i18n-routing)
+
   - [[GitHub] next.js/examples/gh-pages/](https://github.com/vercel/next.js/tree/master/examples/gh-pages)
 
 - [[YouTube] Next.js Static Site Generation (SSG)](https://www.youtube.com/watch?v=_W-tcVzu-Ms)
