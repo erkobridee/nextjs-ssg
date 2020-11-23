@@ -1,5 +1,3 @@
-import Head from 'next/head';
-
 import HtmlHead from 'components/HtmlHead';
 import TopNavJsonPlaceholder from 'components/TopNav/JsonPlaceholder';
 
@@ -16,7 +14,7 @@ export const LayoutJsonPlaceholder = ({
       className,
       containerClassName,
       header: <TopNavJsonPlaceholder />,
-      htmlHead: <HtmlHead title="JsonPlaceholder" />,
+      htmlHead: <HtmlHead title="JSON Placeholder" />,
     }}
   />
 );
