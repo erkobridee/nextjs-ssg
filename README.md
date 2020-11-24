@@ -83,6 +83,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
   - [i18next-browser-languagedetector | npm](https://www.npmjs.com/package/i18next-browser-languagedetector)
 
+#### i18next plugins that doesn't work with next.js
+
+- [i18next-http-backend | npm](https://www.npmjs.com/package/i18next-http-backend) - `Error: ReactDOMServer does not yet support Suspense.`
+
+- [i18next-localstorage-backend | npm](https://www.npmjs.com/package/i18next-localstorage-backend) - `ReferenceError: window is not defined`
+
+  - [How to solve "window is not defined" errors in React and Next.js | Dev.to](https://dev.to/vvo/how-to-solve-window-is-not-defined-errors-in-react-and-next-js-5f97)
+
+- [i18next-chained-backend | npm](https://www.npmjs.com/package/i18next-chained-backend)
+
 ### pt_Br
 
 - [[YouTube] Como inicio meus apps com ReactJS? Next.js, TypeScript, ESLint e Styled Components | Code/Drops #50](https://www.youtube.com/watch?v=1nVUfZg2dSA)

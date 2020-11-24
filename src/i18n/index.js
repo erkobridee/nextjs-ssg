@@ -2,6 +2,15 @@ import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
+//----------------------------------------------------------------------------//
+
+import en from './locales/en.json';
+import pt from './locales/pt.json';
+
+//----------------------------------------------------------------------------//
+
+// const IS_WEB_BROSER = process.browser;
+
 // https://www.i18next.com/principles/fallback
 const fallbackLng = 'en';
 
@@ -9,14 +18,10 @@ const fallbackLng = 'en';
 // (tip move them in a JSON file and import them)
 const resources = {
   en: {
-    translation: {
-      'Welcome to React': 'Welcome to React and react-i18next',
-    },
+    translation: en,
   },
-  fr: {
-    translation: {
-      'Welcome to React': 'Bienvenue à React et react-i18next',
-    },
+  pt: {
+    translation: pt,
   },
 };
 
@@ -25,6 +30,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng,
+
     resources,
 
     keySeparator: false, // we do not use keys in form messages.welcome
