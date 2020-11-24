@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.option {
+  cursor: pointer;
+}
+
+.selected {
+  font-weight: bold;
+  cursor: initial;
+}

@@ -1,11 +1,16 @@
+import { useTranslation } from 'react-i18next';
+
 import TopNavBase from 'components/TopNav/Base';
 
-const menuItems = [
-  { label: 'Home', href: '/' },
+const buildMenuItems = (t) => [
+  { label: t('Home'), href: '/' },
   { label: 'Json Placeholder', href: '/jsonplaceholder' },
-  { label: 'Users', href: '/jsonplaceholder/users' },
+  { label: t('Users'), href: '/jsonplaceholder/users' },
 ];
 
-export const TopNavJsonPlaceholder = () => <TopNavBase items={menuItems} />;
+export const TopNavJsonPlaceholder = () => {
+  const { t } = useTranslation();
+  return <TopNavBase items={buildMenuItems(t)} />;
+};
 
 export default TopNavJsonPlaceholder;
