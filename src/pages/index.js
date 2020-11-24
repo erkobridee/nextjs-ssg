@@ -17,7 +17,10 @@ export const Home = () => {
       </h1>
 
       <h2>{t('Welcome to React')}</h2>
-      <h3>{hello.message}</h3>
+
+      <h3>
+        <code className={styles.code}>hello.json</code> - {hello.message}
+      </h3>
 
       <p className={styles.description}>
         👉 <code className={styles.code}>SSG</code> - static site generation
