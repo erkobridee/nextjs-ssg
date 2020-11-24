@@ -1,4 +1,5 @@
 import InternalLink from 'components/Link/Internal';
+import ChangeLanguage from 'components/ChangeLanguage';
 
 import styles from './index.module.scss';
 
@@ -14,6 +15,8 @@ export const TopNavBase = ({ label, items = [] }) => (
         </li>
       ))}
     </ul>
+    <div className={styles.spacer}></div>
+    <ChangeLanguage />
   </div>
 );
 
