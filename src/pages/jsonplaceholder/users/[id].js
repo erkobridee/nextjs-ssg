@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 import LayoutJsonPlaceholder from 'components/Layout/JsonPlaceholder';
 
 import InternalLink from 'components/Link/Internal';
@@ -39,14 +41,15 @@ export const getStaticProps = async ({ params }) => {
 };
 
 export const User = ({ user }) => {
+  const { t } = useTranslation();
   return (
     <LayoutJsonPlaceholder>
-      <h1>User: {user.name}</h1>
+      <h1>{`${t('User')}: ${user.name}`}</h1>
       <pre>
         <code>{JSON.stringify(user, null, 2)}</code>
       </pre>
       <hr />
-      <InternalLink href="/jsonplaceholder/users">Back</InternalLink>
+      <InternalLink href="/jsonplaceholder/users">{t('Back')}</InternalLink>
     </LayoutJsonPlaceholder>
   );
 };
