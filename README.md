@@ -68,6 +68,21 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - [Automatic Image Optimization: Next.js 10 New Standards for 2020 | Hackernoon](https://hackernoon.com/automatic-image-optimization-nextjs-10-new-standards-for-2020-dc1h3zlf)
 
+### i18n
+
+> the next.js doesn't support natively i18n on the static site generation on the v10 - [i18n with next export calls getStaticProps for each defined lang, but then errors
+> #18318](https://github.com/vercel/next.js/issues/18318#issuecomment-723984723)
+>
+> said that, we need to use the react side i18n approach
+
+`npm i --save i18next i18next-browser-languagedetector react-i18next`
+
+- [i18next](https://www.i18next.com/)
+
+  - [react-i18next](https://react.i18next.com/)
+
+  - [i18next-browser-languagedetector | npm](https://www.npmjs.com/package/i18next-browser-languagedetector)
+
 ### pt_Br
 
 - [[YouTube] Como inicio meus apps com ReactJS? Next.js, TypeScript, ESLint e Styled Components | Code/Drops #50](https://www.youtube.com/watch?v=1nVUfZg2dSA)
