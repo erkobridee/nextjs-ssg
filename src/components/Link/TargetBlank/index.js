@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-export const NewPageLink = React.forwardRef(
+export const TargetBlankLink = React.forwardRef(
   ({ target, rel, ...otherProps }, ref) => {
     target = '_blank';
     rel = 'noopener noreferrer';
@@ -10,4 +10,4 @@ export const NewPageLink = React.forwardRef(
   }
 );
 
-export default NewPageLink;
+export default TargetBlankLink;

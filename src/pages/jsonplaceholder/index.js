@@ -2,16 +2,16 @@ import { useTranslation } from 'react-i18next';
 
 import LayoutJsonPlaceholder from 'components/Layout/JsonPlaceholder';
 
-import { InternalLink, NewPageLink } from 'components/Link';
+import { InternalLink, TargetBlankLink } from 'components/Link';
 
 export const JsonPlaceholder = () => {
   const { t } = useTranslation();
   return (
     <LayoutJsonPlaceholder>
       <h1>
-        <NewPageLink href="https://jsonplaceholder.typicode.com/">
+        <TargetBlankLink href="https://jsonplaceholder.typicode.com/">
           JSON Placeholder
-        </NewPageLink>
+        </TargetBlankLink>
       </h1>
       <ul>
         <li>

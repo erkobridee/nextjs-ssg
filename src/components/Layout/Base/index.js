@@ -2,7 +2,7 @@ import cs from 'classnames';
 import { useTranslation } from 'react-i18next';
 
 import HtmlHead from 'components/HtmlHead';
-import NewPageLink from 'components/Link/NewPage';
+import TargetBlankLink from 'components/Link/TargetBlank';
 
 import { updateAssetsPrefix } from 'utils/path';
 
@@ -30,14 +30,14 @@ export const LayoutBase = ({
         )}
         <main className={cs(styles.main, className)}>{children}</main>
         <footer className={styles.footer}>
-          <NewPageLink href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app">
+          <TargetBlankLink href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app">
             {`${t('Powered by')} `}
             <img
               src={updateAssetsPrefix('vercel.svg')}
               alt="Vercel Logo"
               className={styles.logo}
             />
-          </NewPageLink>
+          </TargetBlankLink>
         </footer>
       </div>
     </>
