@@ -2,7 +2,7 @@ const wp = require('webpack');
 
 const package = require('./package.json');
 
-const isProduction = 'production' === process.env.NODE_ENV;
+const isProduction = 'production' === `${process.env.NODE_ENV}`;
 
 const basePath = isProduction ? `/${package.name}` : '';
 
