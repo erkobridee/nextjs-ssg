@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+`npx create-next-app nextjs-ssg-hello --use-npm`
+
 ## Getting Started
 
 First, run the development server:
@@ -69,6 +71,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [Automatic Image Optimization: Next.js 10 New Standards for 2020 | Hackernoon](https://hackernoon.com/automatic-image-optimization-nextjs-10-new-standards-for-2020-dc1h3zlf)
 
 ### TypeScript
+
+`npm install --save-dev typescript @types/react @types/node`
 
 - [TypeScript Language](https://www.typescriptlang.org/)
 
