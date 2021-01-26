@@ -68,6 +68,20 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - [Automatic Image Optimization: Next.js 10 New Standards for 2020 | Hackernoon](https://hackernoon.com/automatic-image-optimization-nextjs-10-new-standards-for-2020-dc1h3zlf)
 
+### TypeScript
+
+- [TypeScript Language](https://www.typescriptlang.org/)
+
+- React with TypeScript
+
+  - [React + TypeScript - Cheatsheets](https://github.com/typescript-cheatsheets/react)
+
+  - [useTypescript — A Complete Guide to React Hooks and TypeScript](https://levelup.gitconnected.com/usetypescript-a-complete-guide-to-react-hooks-and-typescript-db1858d1fb9c)
+
+- [Next.js TypeScript Types](https://nextjs.org/learn/excel/typescript/nextjs-types)
+
+  - [TypeScript Next.js example](https://github.com/vercel/next.js/tree/canary/examples/with-typescript)
+
 ### i18n
 
 > the next.js doesn't support natively i18n on the static site generation on the v10 - [i18n with next export calls getStaticProps for each defined lang, but then errors
