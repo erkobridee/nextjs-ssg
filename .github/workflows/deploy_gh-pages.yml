@@ -18,7 +18,7 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run build:ci --if-present
+      - run: npm run ci --if-present
         env:
           CI: true
 
