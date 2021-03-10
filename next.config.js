@@ -21,6 +21,4 @@ module.exports = {
   reactStrictMode: true,
   basePath,
   webpack,
-  errorPagesUseHtml: true,
-  errorPages: '.html',
 };
