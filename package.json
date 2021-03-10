@@ -20,7 +20,8 @@
     "serve:ci": "cross-env NODE_ENV=local run-s build:ci serve-nextjs-output",
     "predeploy:gh-pages": "touch out/.nojekyll",
     "deploy:gh-pages": "gh-pages -d out --dotfiles",
-    "deploy": "run-s build:ci deploy:gh-pages"
+    "deploy": "run-s build:ci deploy:gh-pages",
+    "ci": "cross-env NODE_ENV=production run-s build:ci"
   },
   "dependencies": {
     "classnames": "^2.2.6",
