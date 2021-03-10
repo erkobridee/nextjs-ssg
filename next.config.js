@@ -17,6 +17,7 @@ const webpack = (config) => {
 };
 
 module.exports = {
+  trailingSlash: true,
   reactStrictMode: true,
   basePath,
   webpack,
