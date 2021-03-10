@@ -21,12 +21,6 @@ module.exports = {
   reactStrictMode: true,
   basePath,
   webpack,
-  exportPathMap: async function (
-    defaultPathMap
-    // { dev, dir, outDir, distDir, buildId }
-  ) {
-    return {
-      ...defaultPathMap,
-    };
-  },
+  errorPagesUseHtml: true,
+  errorPages: '.html',
 };
