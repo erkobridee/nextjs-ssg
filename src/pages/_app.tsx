@@ -5,9 +5,9 @@ import 'i18n';
 
 import 'styles/globals.scss';
 
-export const MyApp: React.FunctionComponent<AppProps> = ({
+export const App: React.FunctionComponent<AppProps> = ({
   Component,
   pageProps,
 }) => <Component {...pageProps} />;
 
-export default MyApp;
+export default App;
