@@ -1,4 +1,4 @@
-import cs from 'classnames';
+import cs from 'clsx';
 import { useTranslation } from 'react-i18next';
 
 import HtmlHead from 'components/HtmlHead';

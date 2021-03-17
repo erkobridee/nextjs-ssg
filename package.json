@@ -25,7 +25,7 @@
     "ci": "cross-env NODE_ENV=production run-s build:ci"
   },
   "dependencies": {
-    "classnames": "^2.2.6",
+    "clsx": "^1.1.1",
     "i18next": "^19.8.4",
     "i18next-browser-languagedetector": "^6.0.1",
     "next": "^10.0.9",

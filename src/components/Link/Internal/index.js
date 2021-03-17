@@ -2,7 +2,7 @@
 // https://nextjs.org/docs/api-reference/next/router
 
 import React from 'react';
-import cs from 'classnames';
+import cs from 'clsx';
 
 import Link from 'next/link';
 import { useRouter } from 'next/router';
