@@ -88,6 +88,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
   - [TypeScript Next.js example](https://github.com/vercel/next.js/tree/canary/examples/with-typescript)
 
+- [Using Next.js with TypeScript | LogRocket](https://blog.logrocket.com/using-next-js-with-typescript/) - 2020/12/18
+
 - [How to setup NextJS with TypeScript and ESLint + prettier | De Code Natura](https://decodenatura.com/how-to-set-up-nextjs-typescript-eslint-prettier/) - 2020/05/18
 
 ### i18n
