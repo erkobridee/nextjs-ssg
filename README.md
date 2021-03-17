@@ -82,6 +82,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
   - [useTypescript — A Complete Guide to React Hooks and TypeScript](https://levelup.gitconnected.com/usetypescript-a-complete-guide-to-react-hooks-and-typescript-db1858d1fb9c)
 
+- [Next.js - Basic Features: TypeScript](https://nextjs.org/docs/basic-features/typescript)
+
 - [Next.js TypeScript Types](https://nextjs.org/learn/excel/typescript/nextjs-types)
 
   - [TypeScript Next.js example](https://github.com/vercel/next.js/tree/canary/examples/with-typescript)
