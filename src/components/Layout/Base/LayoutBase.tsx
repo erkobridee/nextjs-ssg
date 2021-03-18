@@ -8,7 +8,7 @@ import TargetBlankLink from 'components/Link/TargetBlank';
 
 import { updateAssetsPrefix } from 'utils/path';
 
-import styles from './index.module.scss';
+import styles from './LayoutBase.module.scss';
 
 export interface ILayoutBaseProps {
   htmlHead?: JSX.Element;
