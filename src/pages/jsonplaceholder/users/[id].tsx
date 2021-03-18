@@ -1,11 +1,19 @@
+import * as React from 'react';
+
 import { useTranslation } from 'react-i18next';
 
 import LayoutJsonPlaceholder from 'components/Layout/JsonPlaceholder';
 
 import InternalLink from 'components/Link/Internal';
 
+interface Params {
+  params: {
+    id: string;
+  };
+}
+
 export const getStaticPaths = async () => {
-  let paths = [];
+  let paths: Params[] = [];
 
   try {
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
@@ -23,7 +31,7 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async ({ params }) => {
+export const getStaticProps = async ({ params }: Params) => {
   let user = {};
 
   try {
@@ -40,7 +48,11 @@ export const getStaticProps = async ({ params }) => {
   };
 };
 
-export const User = ({ user }) => {
+interface IUserProps {
+  user: any;
+}
+
+export const User: React.FunctionComponent<IUserProps> = ({ user }) => {
   const { t } = useTranslation();
   return (
     <LayoutJsonPlaceholder>

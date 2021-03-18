@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 import { useTranslation } from 'react-i18next';
 
 import LayoutJsonPlaceholder from 'components/Layout/JsonPlaceholder';
@@ -17,7 +19,11 @@ export const getStaticProps = async () => {
   };
 };
 
-export const Users = ({ users }) => {
+interface IUsersProps {
+  users: any[];
+}
+
+export const Users: React.FunctionComponent<IUsersProps> = ({ users }) => {
   const { t } = useTranslation();
   return (
     <LayoutJsonPlaceholder>

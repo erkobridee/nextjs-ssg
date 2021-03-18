@@ -17,7 +17,7 @@ const defaultCheckIsActiveFn = (pathname: string, href: string) =>
 
 export interface IInternalLinkProps extends TLinkProps {
   /** required value to set on the a tag children */
-  children: React.ReactChild;
+  children: React.ReactNode;
   /** styles classes to be passed to the a tag */
   className?: string;
   /** style class to be applied when its active, default value is `active` */
