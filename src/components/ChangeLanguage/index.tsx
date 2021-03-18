@@ -1,4 +1,5 @@
-import React from 'react';
+import * as React from 'react';
+
 import cs from 'clsx';
 import { useTranslation } from 'react-i18next';
 
@@ -6,20 +7,26 @@ import { supportedLanguages } from 'i18n';
 
 import styles from './index.module.scss';
 
-const loadSelectedLanguage = () => {
-  if (typeof window === 'undefined') {
-    return 'en';
-  }
-  return window.localStorage.getItem('i18nextLng') || 'en';
-};
+export interface IChangeLanguageProps {
+  className?: string;
+}
 
-export const ChangeLanguage = ({ className }) => {
+const DEFAULT_LANGUAGE = 'en';
+
+export const ChangeLanguage: React.FunctionComponent<IChangeLanguageProps> = ({
+  className,
+}) => {
   const { i18n } = useTranslation();
-  const [selectedLanguage, setSelectedLanguage] = React.useState('en');
+  const [selectedLanguage, setSelectedLanguage] = React.useState(
+    DEFAULT_LANGUAGE
+  );
 
   React.useEffect(() => {
     i18n.on('languageChanged', setSelectedLanguage);
-    setSelectedLanguage(window.localStorage.getItem('i18nextLng') || 'en');
+    window &&
+      window.setTimeout(() => {
+        setSelectedLanguage(i18n.language);
+      });
     return () => {
       i18n.off('languageChanged', setSelectedLanguage);
     };
