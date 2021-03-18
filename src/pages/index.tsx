@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 import { useTranslation } from 'react-i18next';
 
 import Layout from 'components/Layout';
@@ -7,7 +9,7 @@ import styles from 'styles/Home.module.scss';
 
 import hello from 'public/hello.json';
 
-export const Home = () => {
+export const Home: React.FunctionComponent = () => {
   const { t } = useTranslation();
 
   return (
