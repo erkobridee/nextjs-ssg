@@ -2,16 +2,12 @@
 // https://nextjs.org/docs/api-reference/next/link
 // https://nextjs.org/docs/api-reference/next/router
 
-// https://reactjs.org/docs/forwarding-refs.html
-// https://nextjs.org/docs/api-reference/next/link
-// https://nextjs.org/docs/api-reference/next/router
-
 import * as React from 'react';
 import NextjsLink, { LinkProps } from 'next/link';
 import { useRouter } from 'next/router';
 import cs from 'clsx';
 
-import styles from './index.module.scss';
+import styles from './InternalLink.module.scss';
 
 export type TLinkProps = LinkProps &
   React.AnchorHTMLAttributes<HTMLAnchorElement>;
