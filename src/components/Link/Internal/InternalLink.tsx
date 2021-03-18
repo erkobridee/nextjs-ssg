@@ -71,4 +71,6 @@ export const InternalLink = React.forwardRef<
   );
 });
 
+InternalLink.displayName = 'InternalLink';
+
 export default InternalLink;

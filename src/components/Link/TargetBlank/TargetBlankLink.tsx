@@ -24,4 +24,6 @@ const TargetBlankLink = React.forwardRef<
   );
 });
 
+TargetBlankLink.displayName = 'TargetBlankLink';
+
 export default TargetBlankLink;
