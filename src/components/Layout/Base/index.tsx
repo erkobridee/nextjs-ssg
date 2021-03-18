@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 import cs from 'clsx';
 import { useTranslation } from 'react-i18next';
 
@@ -8,7 +10,15 @@ import { updateAssetsPrefix } from 'utils/path';
 
 import styles from './index.module.scss';
 
-export const LayoutBase = ({
+export interface ILayoutBaseProps {
+  htmlHead?: JSX.Element;
+  header?: React.ReactNode;
+  className?: string;
+  containerClassName?: string;
+  headerClassName?: string;
+}
+
+export const LayoutBase: React.FunctionComponent<ILayoutBaseProps> = ({
   htmlHead = <HtmlHead />,
   header,
   children,
