@@ -22,14 +22,6 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-<!--
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
--->
-
 ## Useful links
 
 - [Next.js](https://nextjs.org/)
@@ -47,6 +39,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     - [getStaticPaths](https://nextjs.org/docs/basic-features/data-fetching#getstaticpaths-static-generation) - generate static files
 
   - [[GitHub] next.js/examples/gh-pages/](https://github.com/vercel/next.js/tree/master/examples/gh-pages)
+
+  - [[GitHub] next.js/examples/with-jest/](https://github.com/vercel/next.js/tree/master/examples/with-jest)
 
 - [[YouTube] Next.js Static Site Generation (SSG)](https://www.youtube.com/watch?v=_W-tcVzu-Ms)
 
