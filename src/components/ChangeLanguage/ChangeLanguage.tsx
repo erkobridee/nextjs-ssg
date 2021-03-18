@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 import { supportedLanguages } from 'i18n';
 
-import styles from './index.module.scss';
+import styles from './ChangeLanguage.module.scss';
 
 export interface IChangeLanguageProps {
   className?: string;
