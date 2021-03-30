@@ -1,4 +1,8 @@
-const wp = require('webpack');
+/*
+  https://nextjs.org/docs/api-reference/next.config.js/introduction
+
+  https://nextjs.org/docs/api-reference/next.config.js/environment-variables
+*/
 
 const package = require('./package.json');
 
