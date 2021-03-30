@@ -28,6 +28,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
   - [Next.js v10](https://nextjs.org/blog/next-10)
 
+  - [Next.js v10.1](https://nextjs.org/blog/next-10-1)
+
   - [Create a Next.js App](https://nextjs.org/learn/basics/create-nextjs-app)
 
   - [Markdown/MDX with Next.js](https://nextjs.org/blog/markdown)
