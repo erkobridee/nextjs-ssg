@@ -17,9 +17,8 @@ export const ChangeLanguage: React.FunctionComponent<IChangeLanguageProps> = ({
   className,
 }) => {
   const { i18n } = useTranslation();
-  const [selectedLanguage, setSelectedLanguage] = React.useState(
-    DEFAULT_LANGUAGE
-  );
+  const [selectedLanguage, setSelectedLanguage] =
+    React.useState(DEFAULT_LANGUAGE);
 
   React.useEffect(() => {
     i18n.on('languageChanged', setSelectedLanguage);
