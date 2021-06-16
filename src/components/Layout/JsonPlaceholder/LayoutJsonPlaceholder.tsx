@@ -11,20 +11,17 @@ export interface ILayoutJsonPlaceholderProps {
   headerClassName?: string;
 }
 
-export const LayoutJsonPlaceholder: React.FunctionComponent<ILayoutJsonPlaceholderProps> = ({
-  children,
-  className,
-  containerClassName,
-}) => (
-  <LayoutBase
-    {...{
-      children,
-      className,
-      containerClassName,
-      header: <TopNavJsonPlaceholder />,
-      htmlHead: <HtmlHead title="JSON Placeholder" />,
-    }}
-  />
-);
+export const LayoutJsonPlaceholder: React.FunctionComponent<ILayoutJsonPlaceholderProps> =
+  ({ children, className, containerClassName }) => (
+    <LayoutBase
+      {...{
+        children,
+        className,
+        containerClassName,
+        header: <TopNavJsonPlaceholder />,
+        htmlHead: <HtmlHead title="JSON Placeholder" />,
+      }}
+    />
+  );
 
 export default LayoutJsonPlaceholder;

@@ -17,7 +17,4 @@ module.exports = {
   env: {
     ASSETS_PREFIX: basePath,
   },
-  future: {
-    webpack5: true,
-  },
 };
