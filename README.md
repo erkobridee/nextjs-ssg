@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-`npx create-next-app nextjs-ssg-hello --use-npm`
+`npx create-next-app nextjs-ssg --use-npm`
 
 ## Getting Started
 
@@ -26,11 +26,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 - [Next.js](https://nextjs.org/)
 
-  - [Next.js v10](https://nextjs.org/blog/next-10)
+  - [Next.js v11](https://nextjs.org/blog/next-11)
 
   - [Next.js v10.1](https://nextjs.org/blog/next-10-1)
 
     - [Webpack 5 Adoption](https://nextjs.org/docs/messages/webpack5)
+
+  - [Next.js v10](https://nextjs.org/blog/next-10)
 
   - [Create a Next.js App](https://nextjs.org/learn/basics/create-nextjs-app)
 
