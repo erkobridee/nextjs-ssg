@@ -70,6 +70,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 - [Automatic Image Optimization: Next.js 10 New Standards for 2020 | Hackernoon](https://hackernoon.com/automatic-image-optimization-nextjs-10-new-standards-for-2020-dc1h3zlf)
 
+- [[GitHub] newhighsco/next-plugin-svgr](https://github.com/newhighsco/next-plugin-svgr) - SVGR plugin for Next.js
+
 ### TypeScript
 
 `npm install --save-dev typescript @types/react @types/node`
