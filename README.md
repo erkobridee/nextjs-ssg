@@ -109,6 +109,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
   - [i18next-browser-languagedetector | npm](https://www.npmjs.com/package/i18next-browser-languagedetector)
 
+- [[GitHub] i18next/i18next-parser](https://github.com/i18next/i18next-parser)
+
 #### i18next plugins that doesn't work with next.js
 
 - [i18next-http-backend | npm](https://www.npmjs.com/package/i18next-http-backend) - `Error: ReactDOMServer does not yet support Suspense.`
