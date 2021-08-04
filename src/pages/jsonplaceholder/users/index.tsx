@@ -26,9 +26,10 @@ interface IUsersProps {
 export const Users: React.FunctionComponent<IUsersProps> = ({ users }) => {
   const { t } = useTranslation();
   return (
-    <LayoutJsonPlaceholder>
-      <h1>{t('Users')}</h1>
-      <ul>
+    <LayoutJsonPlaceholder className="space-y-4">
+      <h1 className="text-xl mt-8">{t('Users')}</h1>
+
+      <ul className="list-disc list-inside">
         {users.map((user) => (
           <li key={user.id}>
             <InternalLink href={`/jsonplaceholder/users/${user.id}`}>
@@ -37,7 +38,7 @@ export const Users: React.FunctionComponent<IUsersProps> = ({ users }) => {
           </li>
         ))}
       </ul>
-      <hr />
+
       <InternalLink href="/jsonplaceholder">{t('Back')}</InternalLink>
     </LayoutJsonPlaceholder>
   );

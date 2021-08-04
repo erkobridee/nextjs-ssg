@@ -121,6 +121,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 - [i18next-chained-backend | npm](https://www.npmjs.com/package/i18next-chained-backend)
 
+### TailwindCSS
+
+- [TailwindCSS](https://tailwindcss.com/)
+
+  - [Using PostCSS as your preprocessor | TailwindCSS Docs](https://tailwindcss.com/docs/using-with-preprocessors#using-post-css-as-your-preprocessor)
+
+- [Connecting React 17, TypeScript, Tailwind CSS, NextJS Into Developers Friendly Application | Hacker Noon](https://hackernoon.com/connecting-react-17-typescript-tailwind-css-nextjs-into-developers-friendly-application-cj283wpv)
+
+- [Customizing PostCSS Config | Next.js Docs](https://nextjs.org/docs/advanced-features/customizing-postcss-config)
+
 ### pt_Br
 
 - [[YouTube] Como inicio meus apps com ReactJS? Next.js, TypeScript, ESLint e Styled Components | Code/Drops #50](https://www.youtube.com/watch?v=1nVUfZg2dSA)

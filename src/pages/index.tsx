@@ -5,24 +5,41 @@ import { useTranslation } from 'react-i18next';
 import Layout from 'components/Layout';
 import TopNav from 'components/TopNav/Home';
 
-import styles from 'styles/Home.module.scss';
-
 import hello from 'public/hello.json';
+
+const styles = {
+  main: 'justify-center items-center',
+  title: 'leading-[1.15] text-[4rem] text-center mt-8 md:mt-0',
+  titleLink:
+    'no-underline text-blue-500 text-center hover:underline focus:underline active:underline',
+  description: 'px-8 text-center text-2xl leading-normal',
+  code: 'bg-gray-100 rounded-[5px] p-3 text-[1.1rem] font-mono',
+  grid: 'flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full',
+  card: 'p-6 mt-6 md:w-96 text-left border rounded-xl transition ease-[2s] hover:text-blue-500 focus:text-blue-500 active:text-blue-500 hover:border-blue-600 focus:border-blue-600 active:border-blue-600',
+  cardTitle: 'text-xl font-bold',
+  cardText: 'mt-4 text-lg',
+};
 
 export const Home: React.FunctionComponent = () => {
   const { t } = useTranslation();
 
   return (
-    <Layout className={styles.content} header={<TopNav />}>
-      <h1 className={styles.title}>
-        {t('Hello')} <a href="https://nextjs.org">Next.js</a> SSG
-      </h1>
+    <Layout className={styles.main} header={<TopNav />}>
+      <div className="flex flex-col items-center space-y-2">
+        <div className={styles.title}>
+          {t('Hello')}{' '}
+          <a className={styles.titleLink} href="https://nextjs.org">
+            Next.js
+          </a>{' '}
+          SSG
+        </div>
 
-      <h2>{t('Welcome to React')}</h2>
+        <div>{t('Welcome to React')}</div>
 
-      <h3>
-        <code className={styles.code}>hello.json</code> - {hello.message}
-      </h3>
+        <div>
+          <code className={styles.code}>hello.json</code> - {hello.message}
+        </div>
+      </div>
 
       <p className={styles.description}>
         👉 <code className={styles.code}>SSG</code> -{' '}
