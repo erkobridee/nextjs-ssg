@@ -8,11 +8,13 @@ export default class Document extends NextDocument {
       <Html>
         <Head>
           <link rel="shortcut icon" href={updateAssetsPrefix('favicon.ico')} />
-        </Head>
-        <body>
-          <Main />
-          <div id="modal" />
-          <NextScript />
+
+          <link
+            ref="preconnect"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/"
+            crossOrigin=""
+          />
+
           <link
             rel="stylesheet"
             type="text/css"
@@ -23,6 +25,11 @@ export default class Document extends NextDocument {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
+        </Head>
+        <body>
+          <Main />
+          <div id="modal" />
+          <NextScript />
         </body>
       </Html>
     );
