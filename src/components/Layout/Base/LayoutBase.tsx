@@ -8,7 +8,15 @@ import TargetBlankLink from 'components/Link/TargetBlank';
 
 import { updateAssetsPrefix } from 'utils/path';
 
-import styles from './LayoutBase.module.scss';
+const styles = {
+  header: 'flex items-center border border-gray-200 min-h-[60px] w-full px-4',
+  container: 'p-0 flex flex-col min-h-screen',
+  main: 'px-4 flex flex-col flex-1',
+  footer:
+    'mt-6 w-full h-16 border-t border-gray-200 flex justify-center items-center space-x-2',
+  footerLink: 'flex justify-center items-center',
+  footerLogo: 'ml-2 h-4',
+};
 
 export interface ILayoutBaseProps {
   htmlHead?: JSX.Element;
@@ -38,14 +46,33 @@ export const LayoutBase: React.FunctionComponent<ILayoutBaseProps> = ({
             {header}
           </header>
         )}
+
         <main className={cs(styles.main, className)}>{children}</main>
+
         <footer className={styles.footer}>
-          <TargetBlankLink href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app">
+          <TargetBlankLink
+            className={styles.footerLink}
+            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          >
             {`${t('Powered by')} `}
             <img
               src={updateAssetsPrefix('vercel.svg')}
               alt="Vercel Logo"
-              className={styles.logo}
+              className={styles.footerLogo}
+            />
+          </TargetBlankLink>
+
+          <TargetBlankLink href="https://nextjs.org/">
+            <img
+              src="https://img.shields.io/badge/-NextJS-000?&logo=next.js"
+              alt="Next.js Logo"
+            />
+          </TargetBlankLink>
+
+          <TargetBlankLink href="https://tailwindcss.com/">
+            <img
+              src="https://img.shields.io/badge/-TailwindCSS-000?&logo=tailwindcss"
+              alt="TailwindCSS Logo"
             />
           </TargetBlankLink>
         </footer>

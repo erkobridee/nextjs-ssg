@@ -55,12 +55,13 @@ interface IUserProps {
 export const User: React.FunctionComponent<IUserProps> = ({ user }) => {
   const { t } = useTranslation();
   return (
-    <LayoutJsonPlaceholder>
-      <h1>{`${t('User')}: ${user.name}`}</h1>
-      <pre>
+    <LayoutJsonPlaceholder className="space-y-4">
+      <h1 className="text-xl mt-8">{`${t('User')}: ${user.name}`}</h1>
+
+      <pre className="bg-gray-100 rounded-[5px] p-3 text-xs font-mono">
         <code>{JSON.stringify(user, null, 2)}</code>
       </pre>
-      <hr />
+
       <InternalLink href="/jsonplaceholder/users">{t('Back')}</InternalLink>
     </LayoutJsonPlaceholder>
   );
