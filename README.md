@@ -111,6 +111,10 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 - [[GitHub] i18next/i18next-parser](https://github.com/i18next/i18next-parser)
 
+- [[GitHub] locize/translation-check](https://github.com/locize/translation-check) - This package shows an overview of your translations. Check which keys are not yet translated.
+
+- [[GitHub] juliandavidmr/i18n-editor](https://github.com/juliandavidmr/i18n-editor) - [web editor](https://juliandavidmr.github.io/i18n-editor/dist/) : Simple JSON localization file manager for i18n json files
+
 #### i18next plugins that doesn't work with next.js
 
 - [i18next-http-backend | npm](https://www.npmjs.com/package/i18next-http-backend) - `Error: ReactDOMServer does not yet support Suspense.`
