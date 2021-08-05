@@ -12,7 +12,7 @@ const styles = {
   title: 'leading-[1.15] text-[4rem] text-center mt-8 md:mt-0',
   titleLink:
     'no-underline text-blue-500 text-center hover:underline focus:underline active:underline',
-  description: 'px-8 text-center text-2xl leading-normal',
+  description: 'mt-4 px-8 text-center text-2xl leading-normal',
   code: 'bg-gray-100 rounded-[5px] p-3 text-[1.1rem] font-mono',
   grid: 'flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full',
   card: 'p-6 mt-6 md:w-96 text-left border rounded-xl transition ease-[2s] hover:text-blue-500 focus:text-blue-500 active:text-blue-500 hover:border-blue-600 focus:border-blue-600 active:border-blue-600',
