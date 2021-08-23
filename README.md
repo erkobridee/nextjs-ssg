@@ -26,6 +26,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 - [Next.js](https://nextjs.org/)
 
+  - [Next.js v11.1](https://nextjs.org/blog/next-11-1)
+
   - [Next.js v11](https://nextjs.org/blog/next-11)
 
   - [Next.js v10.1](https://nextjs.org/blog/next-10-1)
