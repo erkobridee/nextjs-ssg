@@ -39,6 +39,7 @@ module.exports = {
     '@typescript-eslint/ban-ts-ignore': 'off',
     // needed for NextJS's jsx without react import
     'react/react-in-jsx-scope': 'off',
+    '@next/next/no-img-element': 'off',
   },
   globals: { React: 'writable' },
 };

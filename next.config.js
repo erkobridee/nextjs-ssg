@@ -13,7 +13,7 @@ const isProduction = 'production' === `${process.env.NODE_ENV}`;
 const basePath = isProduction ? `/${package.name}` : '';
 
 /**
- * @type {import('next/dist/next-server/server/config').NextConfig}
+ * @type {import('next/dist/server/config').NextConfig}
  **/
 module.exports = {
   trailingSlash: true,
