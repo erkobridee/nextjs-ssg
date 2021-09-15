@@ -15,7 +15,7 @@ const basePath = isProduction ? `/${package.name}` : '';
 /**
  * @type {import('next').NextConfig}
  **/
-module.exports = {
+const nextConfig = {
   trailingSlash: true,
   reactStrictMode: true,
   basePath,
@@ -23,3 +23,5 @@ module.exports = {
     ASSETS_PREFIX: basePath,
   },
 };
+
+module.exports = nextConfig;
