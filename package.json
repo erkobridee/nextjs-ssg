@@ -6,7 +6,7 @@
     "husky:uninstall": "npx rimraf .husky && git config --unset core.hooksPath",
     "husky:install": "npx husky install",
     "husky:config:pre-commit": "npx husky add .husky/pre-commit \"npx lint-staged\"",
-    "husky": "npx run-s husky:install husky:config:pre-commit",
+    "husky": "node scripts/husky-setup.js",
     "prepare": "npx is-ci || npm run husky",
     "prettify": "npx prettier --write .",
     "check:lint": "npx eslint 'src/**/*.{js,jsx,ts,tsx}'",
