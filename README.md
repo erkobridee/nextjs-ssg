@@ -143,6 +143,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 - [Customizing PostCSS Config | Next.js Docs](https://nextjs.org/docs/advanced-features/customizing-postcss-config)
 
+- [[YouTube] Building a Headless Ecommerce Store with Tailwind CSS, Shopify, and Next.js - Tailwind Labs](https://www.youtube.com/watch?v=xNMYz74zNHM)
+
 ### pt_Br
 
 - [[YouTube] Como inicio meus apps com ReactJS? Next.js, TypeScript, ESLint e Styled Components | Code/Drops #50](https://www.youtube.com/watch?v=1nVUfZg2dSA)
