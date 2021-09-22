@@ -1,9 +1,9 @@
 const path = require('path');
-const { pathExistsSync } = require('./libs/fs-toolkit');
+const { existsSync } = require('fs');
 const exec = require('./libs/execute-sync-command');
 
 const filePath = path.join(__dirname, '..', '.husky', 'pre-commit');
-const flag = pathExistsSync(filePath);
+const flag = existsSync(filePath);
 
 if (!flag) {
   exec(`npx run-s husky:install husky:config:pre-commit`, {
