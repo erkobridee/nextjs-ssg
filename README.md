@@ -96,6 +96,14 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 - [How to setup NextJS with TypeScript and ESLint + prettier | De Code Natura](https://decodenatura.com/how-to-set-up-nextjs-typescript-eslint-prettier/) - 2020/05/18
 
+### Testing
+
+- [Testing | Next.js Docs](https://nextjs.org/docs/testing)
+
+- [How to Set Up Jest and React Testing Library with Next.js | Kyrell Dixon](https://www.kyrelldixon.com/blog/setup-jest-and-react-testing-library-with-nextjs)
+
+- [How to create Next.js project with TypeScript, Jest, React Testing Lib | Night Zen](https://nightzen.dev/how-to-create-a-nextjs-project-with-typescript-jest-react-testing-library-and-test-renderer) - 2021/07/31
+
 - [How to Setup Next.js + TypeScript + Eslint + Storybook + Jest + Enzyme - by Caelin Sutch | JavaScript in Plain English](https://javascript.plainenglish.io/how-to-setup-next-js-typescript-eslint-storybook-jest-enzyme-610451591df0) - 2020/12/31
 
 ### i18n
