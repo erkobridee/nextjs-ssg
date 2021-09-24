@@ -96,6 +96,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 - [How to setup NextJS with TypeScript and ESLint + prettier | De Code Natura](https://decodenatura.com/how-to-set-up-nextjs-typescript-eslint-prettier/) - 2020/05/18
 
+- [How to Setup Next.js + TypeScript + Eslint + Storybook + Jest + Enzyme - by Caelin Sutch | JavaScript in Plain English](https://javascript.plainenglish.io/how-to-setup-next-js-typescript-eslint-storybook-jest-enzyme-610451591df0) - 2020/12/31
+
 ### i18n
 
 > the next.js doesn't support natively i18n on the static site generation on the v10 - [i18n with next export calls getStaticProps for each defined lang, but then errors
