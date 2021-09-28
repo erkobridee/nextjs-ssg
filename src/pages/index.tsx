@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import Layout from 'components/Layout';
 import TopNav from 'components/TopNav/Home';
+import TargetBlank from 'components/Link/TargetBlank';
 
 import hello from 'public/hello.json';
 
@@ -42,8 +43,13 @@ export const Home: React.FunctionComponent = () => {
       </div>
 
       <p className={styles.description}>
-        👉 <code className={styles.code}>SSG</code> -{' '}
-        {t('static site generation')}
+        👉{' '}
+        <code className={styles.code}>
+          <TargetBlank href="https://nextjs.org/docs/basic-features/pages#static-generation-recommended">
+            SSG
+          </TargetBlank>
+        </code>{' '}
+        - {t('static site generation')}
       </p>
 
       <div className={styles.grid}>
