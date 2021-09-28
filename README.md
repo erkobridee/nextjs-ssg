@@ -1,6 +1,26 @@
+# Next.js (SSG) + Tailwind CSS (postcss, sass, clsx) + TypeScript + i18next : Starter
+
+> [Next.js SSG - Static Site Generation](https://nextjs.org/docs/basic-features/pages#static-generation-recommended)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 `npx create-next-app nextjs-ssg --use-npm`
+
+## Bootstrap a new project using this template
+
+You can do it following one of the 2 options bellow:
+
+### 1. Using `create-next-app`
+
+```
+npx create-next-app -e https://github.com/erkobridee/nextjs-ssg ${new project name}
+```
+
+### 2. Use this repository as template
+
+![use this template](https://docs.github.com/assets/images/help/repository/use-this-template-button.png)
+
+[Creating a repository from a template | GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
 
 ## Getting Started
 
