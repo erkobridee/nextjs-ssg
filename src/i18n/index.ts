@@ -5,29 +5,28 @@ import { initReactI18next } from 'react-i18next';
 //----------------------------------------------------------------------------//
 
 import en from './locales/en.json';
-import pt from './locales/pt.json';
 
 //----------------------------------------------------------------------------//
 
-// const IS_WEB_BROSER = process.browser;
+export const DEFAULT_LANGUAGE_CODE = 'en';
 
 // https://www.i18next.com/principles/fallback
-export const fallbackLng = 'en';
+export const fallbackLng = DEFAULT_LANGUAGE_CODE;
 
-// the translations
-// (tip move them in a JSON file and import them)
 const resources = {
   en: {
     translation: en,
-  },
-  pt: {
-    translation: pt,
   },
 };
 
 export const DEFAULT_NS = 'translation';
 
-export const supportedLanguages = ['en', 'pt'];
+export const languagesOptions = {
+  en: 'English',
+  pt: 'Português',
+};
+
+export const supportedLanguages = Object.keys(languagesOptions);
 
 i18n
   .use(LanguageDetector)
@@ -45,6 +44,12 @@ i18n
   });
 
 export const loadLanguageTranslations = async (language: string) => {
+  language = language.substring(0, 2);
+
+  if (!supportedLanguages.includes(language)) {
+    return Promise.reject(`The language ${language} is not supported.`);
+  }
+
   if (i18n.hasResourceBundle(language, DEFAULT_NS)) {
     return Promise.resolve('loaded');
   }

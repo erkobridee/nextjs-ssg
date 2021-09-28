@@ -7,6 +7,9 @@
 */
 
 const package = require('./package.json');
+const VERSION = require('./scripts/compute-version');
+
+console.log(`\n\nRunning version: ${VERSION}\n`);
 
 const isProduction = 'production' === `${process.env.NODE_ENV}`;
 
@@ -21,6 +24,7 @@ const nextConfig = {
   basePath,
   env: {
     ASSETS_PREFIX: basePath,
+    VERSION,
   },
 };
 
