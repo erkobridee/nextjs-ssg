@@ -7,6 +7,8 @@ export default class Document extends NextDocument {
     return (
       <Html>
         <Head>
+          <meta name="version" content={process.env.VERSION} />
+
           <link rel="shortcut icon" href={updateAssetsPrefix('favicon.ico')} />
 
           <link
