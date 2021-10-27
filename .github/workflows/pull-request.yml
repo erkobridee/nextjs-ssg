@@ -1,0 +1,37 @@
+name: validade pull request
+
+on:
+  pull_request:
+    branches:
+      - 'develop'
+      - 'main'
+    tags-ignore:
+      - '*.*'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Node.js modules cache
+        uses: actions/cache@v2
+        id: restore-cache
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Install Node.js dependencies
+        run: npm ci
+        if: steps.restore-cache.outputs.cache-hit != 'true'
+
+      - name: Run the PR check
+        run: npm run pullrequest --if-present
+        env:
+          CI: true

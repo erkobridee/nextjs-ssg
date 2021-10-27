@@ -30,7 +30,8 @@
     "predeploy:gh-pages": "touch out/.nojekyll",
     "deploy:gh-pages": "npx gh-pages -d out --dotfiles",
     "deploy": "npx run-s build:ci deploy:gh-pages",
-    "ci": "npx cross-env NODE_ENV=production npx run-s build:ci"
+    "ci": "npx cross-env NODE_ENV=production npx run-s build:ci",
+    "pullrequest": "npx run-s check build"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,md,html,css,scss}": "npx prettier --write",
