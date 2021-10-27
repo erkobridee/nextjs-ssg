@@ -46,15 +46,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 - [Next.js](https://nextjs.org/)
 
-  - [Next.js v11.1](https://nextjs.org/blog/next-11-1)
-
-  - [Next.js v11](https://nextjs.org/blog/next-11)
-
-  - [Next.js v10.1](https://nextjs.org/blog/next-10-1)
-
-    - [Webpack 5 Adoption](https://nextjs.org/docs/messages/webpack5)
-
-  - [Next.js v10](https://nextjs.org/blog/next-10)
+  - [Next.js v12](https://nextjs.org/blog/next-12)
 
   - [Create a Next.js App](https://nextjs.org/learn/basics/create-nextjs-app)
 

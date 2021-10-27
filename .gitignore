@@ -19,6 +19,7 @@
 .DS_Store
 *.pem
 .husky
+tsconfig.tsbuildinfo
 
 # debug
 npm-debug.log*
