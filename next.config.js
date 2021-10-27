@@ -19,6 +19,7 @@ const basePath = isProduction ? `/${package.name}` : '';
  * @type {import('next').NextConfig}
  **/
 const nextConfig = {
+  swcMinify: true,
   trailingSlash: true,
   reactStrictMode: true,
   basePath,

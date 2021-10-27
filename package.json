@@ -30,7 +30,8 @@
     "predeploy:gh-pages": "touch out/.nojekyll",
     "deploy:gh-pages": "npx gh-pages -d out --dotfiles",
     "deploy": "npx run-s build:ci deploy:gh-pages",
-    "ci": "npx cross-env NODE_ENV=production npx run-s build:ci"
+    "ci": "npx cross-env NODE_ENV=production npx run-s build:ci",
+    "pullrequest": "npx run-s check build"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,md,html,css,scss}": "npx prettier --write",
@@ -40,21 +41,21 @@
     "clsx": "1.1.1",
     "i18next": "21.2.6",
     "i18next-browser-languagedetector": "6.1.2",
-    "next": "11.1.2",
+    "next": "12.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-i18next": "11.12.0"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "11.1.2",
+    "@next/eslint-plugin-next": "12.0.1",
     "@types/node": "14.17.22",
     "@types/react": "17.0.27",
-    "@typescript-eslint/eslint-plugin": "4.33.0",
-    "@typescript-eslint/parser": "4.33.0",
+    "@typescript-eslint/eslint-plugin": "5.2.0",
+    "@typescript-eslint/parser": "5.2.0",
     "autoprefixer": "10.3.7",
     "cross-env": "7.0.3",
-    "eslint": "8.0.1",
-    "eslint-config-next": "11.1.2",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "12.0.1",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.26.1",
