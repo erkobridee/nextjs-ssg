@@ -48,6 +48,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
   - [Next.js v12](https://nextjs.org/blog/next-12)
 
+    - [[YouTube] Next.js 12 is a Beast | Fireship](https://www.youtube.com/watch?v=lRQ5z7i7pxE)
+
   - [Create a Next.js App](https://nextjs.org/learn/basics/create-nextjs-app)
 
   - [Markdown/MDX with Next.js](https://nextjs.org/blog/markdown)
