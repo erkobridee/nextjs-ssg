@@ -52,6 +52,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
     - [[YouTube Playlist] Next.js Conf 2021](https://www.youtube.com/playlist?list=PLBnKlKpPeagnJYpc5geAHU40ld5hk8i82)
 
+    - **Known issue:** some thrid-party libraries doesn't work correctly when it's bundled using the [swcMinify](https://nextjs.org/docs/upgrading#swc-replacing-terser-for-minification)
+
   - [Create a Next.js App](https://nextjs.org/learn/basics/create-nextjs-app)
 
   - [Markdown/MDX with Next.js](https://nextjs.org/blog/markdown)
