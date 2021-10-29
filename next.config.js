@@ -9,6 +9,10 @@
 const package = require('./package.json');
 const VERSION = require('./scripts/compute-version');
 
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+
 console.log(`\n\nRunning version: ${VERSION}\n`);
 
 const isProduction = 'production' === `${process.env.NODE_ENV}`;
@@ -29,4 +33,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = withBundleAnalyzer(nextConfig);

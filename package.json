@@ -31,7 +31,8 @@
     "deploy:gh-pages": "npx gh-pages -d out --dotfiles",
     "deploy": "npx run-s build:ci deploy:gh-pages",
     "ci": "npx cross-env NODE_ENV=production npx run-s build:ci",
-    "pullrequest": "npx run-s check build"
+    "pullrequest": "npx run-s check build",
+    "bundle-analyze": "npx cross-env ANALYZE=true npx run-s clean next:build"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,md,html,css,scss}": "npx prettier --write",
@@ -47,6 +48,7 @@
     "react-i18next": "11.12.0"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "12.0.1",
     "@next/eslint-plugin-next": "12.0.1",
     "@types/node": "14.17.32",
     "@types/react": "17.0.33",
@@ -70,7 +72,7 @@
     "rimraf": "3.0.2",
     "sass": "1.43.3",
     "serve": "12.0.1",
-    "tailwindcss": "2.2.17",
+    "tailwindcss": "2.2.19",
     "typescript": "4.4.4"
   }
 }

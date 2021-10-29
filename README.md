@@ -32,6 +32,12 @@ npm start
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+### Bundle Analize
+
+```bash
+npm run bundle-analyze
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
