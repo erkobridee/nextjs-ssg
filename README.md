@@ -173,6 +173,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
   - [Using PostCSS as your preprocessor | TailwindCSS Docs](https://tailwindcss.com/docs/using-with-preprocessors#using-post-css-as-your-preprocessor)
 
+- [Craft Scalable, Custom-Made Interfaces with Tailwind CSS | egghead.io](https://egghead.io/courses/craft-scalable-custom-made-interfaces-with-tailwind-css-8dfee898)
+
 - [Connecting React 17, TypeScript, Tailwind CSS, NextJS Into Developers Friendly Application | Hacker Noon](https://hackernoon.com/connecting-react-17-typescript-tailwind-css-nextjs-into-developers-friendly-application-cj283wpv)
 
 - [Customizing PostCSS Config | Next.js Docs](https://nextjs.org/docs/advanced-features/customizing-postcss-config)
