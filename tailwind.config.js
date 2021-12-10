@@ -16,7 +16,5 @@
 */
 
 module.exports = {
-  mode: 'jit',
-  darkMode: false, // or 'media' or 'class'
-  purge: ['./src/**/*.{jsx,tsx,css,scss}'],
+  content: ['./src/**/*.{jsx,tsx,css,scss}'],
 };
