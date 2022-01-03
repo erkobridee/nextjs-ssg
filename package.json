@@ -64,7 +64,7 @@
     "gh-pages": "3.2.3",
     "husky": "7.0.4",
     "is-ci": "3.0.1",
-    "lint-staged": "12.1.4",
+    "lint-staged": "12.1.5",
     "npm-run-all2": "5.0.2",
     "postcss": "8.4.5",
     "postcss-import": "14.0.2",
