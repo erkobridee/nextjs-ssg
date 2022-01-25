@@ -56,9 +56,9 @@ export const User: React.FunctionComponent<IUserProps> = ({ user }) => {
   const { t } = useTranslation();
   return (
     <LayoutJsonPlaceholder className="space-y-4">
-      <h1 className="text-xl mt-8">{`${t('User')}: ${user.name}`}</h1>
+      <h1 className="mt-8 text-xl">{`${t('User')}: ${user.name}`}</h1>
 
-      <pre className="bg-gray-100 rounded-[5px] p-3 text-xs font-mono">
+      <pre className="rounded-[5px] bg-gray-100 p-3 font-mono text-xs">
         <code>{JSON.stringify(user, null, 2)}</code>
       </pre>
 

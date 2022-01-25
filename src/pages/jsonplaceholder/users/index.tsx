@@ -27,9 +27,9 @@ export const Users: React.FunctionComponent<IUsersProps> = ({ users }) => {
   const { t } = useTranslation();
   return (
     <LayoutJsonPlaceholder className="space-y-4">
-      <h1 className="text-xl mt-8">{t('Users')}</h1>
+      <h1 className="mt-8 text-xl">{t('Users')}</h1>
 
-      <ul className="list-disc list-inside">
+      <ul className="list-inside list-disc">
         {users.map((user) => (
           <li key={user.id}>
             <InternalLink href={`/jsonplaceholder/users/${user.id}`}>
