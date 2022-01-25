@@ -1,6 +1,6 @@
 {
   "name": "nextjs-ssg",
-  "version": "4.7.0",
+  "version": "4.8.0",
   "private": true,
   "scripts": {
     "husky:uninstall": "npx rimraf .husky && git config --unset core.hooksPath",
