@@ -6,6 +6,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 `npx create-next-app nextjs-ssg --use-npm`
 
+ℹ️&nbsp;&nbsp;use the [node.js](https://nodejs.org/en/) v14 LTS
+
 ## Bootstrap a new project using this template
 
 You can do it following one of the 2 options bellow:
