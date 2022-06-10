@@ -13,7 +13,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
 
-console.log(`\n\nRunning version: ${VERSION}\n`);
+const version = String(VERSION);
+
+console.log(`\n\nRunning version: ${version}\n`);
 
 const isProduction = 'production' === `${process.env.NODE_ENV}`;
 
@@ -29,7 +31,7 @@ const nextConfig = {
   basePath,
   env: {
     ASSETS_PREFIX: basePath,
-    VERSION,
+    VERSION: version,
   },
 };
 
