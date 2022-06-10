@@ -6,7 +6,7 @@ const filePath = path.join(__dirname, '..', '.husky', 'pre-commit');
 const flag = existsSync(filePath);
 
 if (!flag) {
-  exec(`npx run-s husky:install husky:config:pre-commit`, {
+  exec(`npm run husky:setup`, {
     stdio: [0, 1, 2],
   });
   console.log('');
