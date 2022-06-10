@@ -15,6 +15,7 @@
   https://tailwindcss.com/docs/customizing-colors#naming-your-colors
 */
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{jsx,tsx,css,scss}'],
 };
