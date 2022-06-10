@@ -1,6 +1,6 @@
 {
   "name": "nextjs-ssg",
-  "version": "4.9.1",
+  "version": "4.10.0",
   "private": true,
   "scripts": {
     "lintstaged": "lint-staged",
