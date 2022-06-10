@@ -47,7 +47,7 @@
     "next": "12.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-i18next": "11.16.2"
+    "react-i18next": "11.17.1"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "12.1.2",
