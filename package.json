@@ -19,7 +19,7 @@
     "next:build": "next build",
     "next:start": "next start",
     "post:next:export": "node scripts/post-export.js",
-    "start": "next:dev",
+    "start": "run-s next:dev",
     "clean:node_modules-cache": "rimraf node_modules/.cache",
     "clean:next-cache": "rimraf .next",
     "clean:next-output": "rimraf out",
