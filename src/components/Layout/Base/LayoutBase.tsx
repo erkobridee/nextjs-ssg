@@ -24,6 +24,7 @@ export interface ILayoutBaseProps {
   className?: string;
   containerClassName?: string;
   headerClassName?: string;
+  children?: React.ReactNode;
 }
 
 export const LayoutBase: React.FunctionComponent<ILayoutBaseProps> = ({
