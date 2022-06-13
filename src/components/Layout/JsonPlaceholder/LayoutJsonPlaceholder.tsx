@@ -9,6 +9,7 @@ export interface ILayoutJsonPlaceholderProps {
   className?: string;
   containerClassName?: string;
   headerClassName?: string;
+  children?: React.ReactNode;
 }
 
 export const LayoutJsonPlaceholder: React.FunctionComponent<

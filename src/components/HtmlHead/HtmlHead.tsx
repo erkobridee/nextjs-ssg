@@ -4,6 +4,7 @@ import Head from 'next/head';
 
 export interface IHtmlHeadProps {
   title?: string;
+  children?: React.ReactNode;
 }
 
 export const HtmlHead: React.FunctionComponent<IHtmlHeadProps> = ({
