@@ -55,8 +55,14 @@ export const loadLanguageTranslations = async (language: string) => {
   }
 
   try {
-    const module = await import(`./locales/${language}.json`);
-    i18n.addResourceBundle(language, DEFAULT_NS, module.default, true, true);
+    const languageLocale = await import(`./locales/${language}.json`);
+    i18n.addResourceBundle(
+      language,
+      DEFAULT_NS,
+      languageLocale.default,
+      true,
+      true
+    );
     return Promise.resolve('loaded');
   } catch (error) {
     const message = `file not found: ${language}.json`;
