@@ -50,8 +50,8 @@
     "react-i18next": "11.17.2"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "12.1.2",
-    "@next/eslint-plugin-next": "12.1.2",
+    "@next/bundle-analyzer": "12.1.6",
+    "@next/eslint-plugin-next": "12.1.6",
     "@types/node": "17.0.42",
     "@types/react": "17.0.45",
     "@typescript-eslint/eslint-plugin": "5.28.0",
@@ -59,7 +59,7 @@
     "autoprefixer": "10.4.7",
     "cross-env": "7.0.3",
     "eslint": "8.17.0",
-    "eslint-config-next": "12.1.2",
+    "eslint-config-next": "12.1.6",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.30.0",
