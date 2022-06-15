@@ -100,9 +100,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 - [[GitHub] newhighsco/next-plugin-svgr](https://github.com/newhighsco/next-plugin-svgr) - SVGR plugin for Next.js
 
-- [[GitHub] typicode/husky](https://github.com/typicode/husky)
-
-  - [[StackOverflow] How to fix error 'not found husky-run' when committing new code?](https://stackoverflow.com/questions/66246587/how-to-fix-error-not-found-husky-run-when-committing-new-code)
+- [[GitHub] toplenboren/simple-git-hooks](https://github.com/toplenboren/simple-git-hooks)
 
 ### TypeScript
 
