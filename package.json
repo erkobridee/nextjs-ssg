@@ -64,7 +64,7 @@
     "is-ci": "3.0.1",
     "lint-staged": "13.0.3",
     "npm-run-all2": "6.0.2",
-    "postcss": "8.4.16",
+    "postcss": "8.4.17",
     "postcss-import": "15.0.0",
     "prettier": "2.7.1",
     "prettier-plugin-tailwindcss": "0.1.13",
