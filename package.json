@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "clsx": "1.2.1",
-    "i18next": "21.9.2",
+    "i18next": "21.10.0",
     "i18next-browser-languagedetector": "6.1.8",
     "next": "12.3.1",
     "react": "17.0.2",
