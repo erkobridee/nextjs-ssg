@@ -67,7 +67,7 @@
     "postcss": "8.4.21",
     "postcss-import": "15.1.0",
     "prettier": "2.8.7",
-    "prettier-plugin-tailwindcss": "0.2.5",
+    "prettier-plugin-tailwindcss": "0.2.6",
     "rimraf": "4.4.1",
     "sass": "1.60.0",
     "serve": "14.2.0",
