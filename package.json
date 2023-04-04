@@ -63,7 +63,7 @@
     "gh-pages": "5.0.0",
     "is-ci": "3.0.1",
     "lint-staged": "13.2.0",
-    "npm-run-all2": "6.0.4",
+    "npm-run-all2": "6.0.5",
     "postcss": "8.4.21",
     "postcss-import": "15.1.0",
     "prettier": "2.8.7",
