@@ -49,7 +49,7 @@
     "@next/bundle-analyzer": "12.3.4",
     "@next/eslint-plugin-next": "12.3.4",
     "@types/node": "18.15.11",
-    "@types/react": "17.0.53",
+    "@types/react": "17.0.58",
     "@typescript-eslint/eslint-plugin": "5.57.1",
     "@typescript-eslint/parser": "5.57.1",
     "autoprefixer": "10.4.14",
