@@ -73,7 +73,7 @@
     "serve": "14.2.0",
     "simple-git-hooks": "2.8.1",
     "tailwindcss": "3.3.1",
-    "typescript": "5.0.3"
+    "typescript": "5.0.4"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
