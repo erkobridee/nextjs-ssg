@@ -62,7 +62,7 @@
     "eslint-plugin-tailwindcss": "3.11.0",
     "gh-pages": "5.0.0",
     "is-ci": "3.0.1",
-    "lint-staged": "13.2.1",
+    "lint-staged": "13.2.2",
     "npm-run-all2": "6.0.5",
     "postcss": "8.4.23",
     "postcss-import": "15.1.0",
