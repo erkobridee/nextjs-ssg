@@ -48,7 +48,7 @@
   "devDependencies": {
     "@next/bundle-analyzer": "12.3.4",
     "@next/eslint-plugin-next": "12.3.4",
-    "@types/node": "20.12.12",
+    "@types/node": "20.14.1",
     "@types/react": "17.0.80",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
