@@ -37,7 +37,7 @@
     "src/**/*.{js,jsx,ts,tsx}": "eslint --fix"
   },
   "dependencies": {
-    "clsx": "1.2.1",
+    "clsx": "2.1.1",
     "i18next": "21.10.0",
     "i18next-browser-languagedetector": "7.0.1",
     "next": "12.3.4",
