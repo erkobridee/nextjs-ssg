@@ -59,7 +59,7 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.36.1",
-    "eslint-plugin-tailwindcss": "3.17.4",
+    "eslint-plugin-tailwindcss": "3.17.5",
     "gh-pages": "6.1.1",
     "is-ci": "3.0.1",
     "lint-staged": "15.2.10",
