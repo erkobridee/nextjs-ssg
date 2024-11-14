@@ -70,7 +70,7 @@
     "prettier-plugin-tailwindcss": "0.4.1",
     "rimraf": "6.0.1",
     "sass": "1.79.4",
-    "serve": "14.2.3",
+    "serve": "14.2.4",
     "simple-git-hooks": "2.11.1",
     "tailwindcss": "3.4.13",
     "typescript": "5.6.2"
