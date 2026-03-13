@@ -6,7 +6,9 @@ import prettier from 'eslint-config-prettier/flat';
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
+
   prettier,
+
   // Override default ignores of eslint-config-next.
   globalIgnores([
     // Default ignores of eslint-config-next:
@@ -16,7 +18,7 @@ const eslintConfig = defineConfig([
     'next-env.d.ts',
 
     // TODO: review and remove it later
-    'src/_OLD_pages/**'
+    '_OLD_src/**'
   ])
 ]);
 
