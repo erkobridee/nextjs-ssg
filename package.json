@@ -1,8 +1,8 @@
 {
   "name": "nextjs-ssg",
-  "version": "4.12.0",
+  "version": "5.0.0",
   "private": true,
-  "scripts": {
+  "_OLD_scripts": {
     "unset:git-hooks-path": "git config --unset core.hooksPath",
     "simple-git-hooks": "npx simple-git-hooks",
     "postinstall": "is-ci || npm run simple-git-hooks",
@@ -29,53 +29,52 @@
     "deploy:gh-pages": "gh-pages -d out --dotfiles",
     "deploy": "run-s build:ci deploy:gh-pages",
     "ci": "cross-env NODE_ENV=production run-s build:ci",
-    "pullrequest": "run-s check build",
-    "bundle-analyze": "cross-env ANALYZE=true run-s clean next:build"
+    "pullrequest": "run-s check build"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "prettify": "prettier --write .",
+    "preview": "serve out -l 1234"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,md,html,css,scss}": "prettier --write",
     "src/**/*.{js,jsx,ts,tsx}": "eslint --fix"
   },
-  "dependencies": {
-    "clsx": "2.1.1",
-    "i18next": "24.2.3",
-    "i18next-browser-languagedetector": "8.2.0",
-    "next": "12.3.7",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-i18next": "11.18.6"
-  },
-  "devDependencies": {
-    "@next/bundle-analyzer": "12.3.7",
-    "@next/eslint-plugin-next": "12.3.7",
-    "@types/node": "22.19.15",
-    "@types/react": "17.0.91",
-    "@typescript-eslint/eslint-plugin": "5.62.0",
-    "@typescript-eslint/parser": "5.62.0",
-    "autoprefixer": "10.4.27",
-    "cross-env": "7.0.3",
-    "eslint": "8.57.1",
-    "eslint-config-next": "12.3.7",
-    "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-prettier": "4.2.5",
-    "eslint-plugin-react": "7.37.5",
-    "eslint-plugin-tailwindcss": "3.18.2",
-    "gh-pages": "6.3.0",
-    "is-ci": "4.1.0",
-    "lint-staged": "16.2.7",
-    "npm-run-all2": "7.0.2",
-    "postcss": "8.5.6",
-    "postcss-import": "16.1.0",
-    "prettier": "2.8.8",
-    "prettier-plugin-tailwindcss": "0.4.1",
-    "rimraf": "6.1.2",
-    "sass": "1.94.2",
-    "serve": "14.2.5",
-    "simple-git-hooks": "2.13.1",
-    "tailwindcss": "3.4.18",
-    "typescript": "5.9.3"
-  },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
+  },
+  "dependencies": {
+    "i18next": "25.8.18",
+    "i18next-browser-languagedetector": "8.2.1",
+    "next": "16.1.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-i18next": "16.5.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "25.5.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "clsx": "2.1.1",
+    "cross-env": "10.1.0",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.1.6",
+    "eslint-config-prettier": "10.1.8",
+    "gh-pages": "6.3.0",
+    "is-ci": "4.1.0",
+    "lint-staged": "16.3.3",
+    "npm-run-all2": "8.0.4",
+    "prettier": "3.8.1",
+    "prettier-plugin-tailwindcss": "0.7.2",
+    "rimraf": "6.1.3",
+    "serve": "14.2.6",
+    "simple-git-hooks": "2.13.1",
+    "tailwind-merge": "3.5.0",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3"
   }
 }
