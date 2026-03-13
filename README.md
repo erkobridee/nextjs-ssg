@@ -64,6 +64,8 @@ To learn more about Next.js, take a look at the following resources:
 
   - [Static Site Generation (SSG) | Next.js Docs](https://nextjs.org/docs/pages/building-your-application/rendering/static-site-generation)
 
+  - [How to use markdown and MDX in Next.js | Next.js Docs](https://nextjs.org/docs/app/guides/mdx#using-file-based-routing)
+
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 - [[GitHub] next.js/examples/github-pages/](https://github.com/vercel/next.js/tree/canary/examples/github-pages)
