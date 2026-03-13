@@ -15,7 +15,7 @@ export const getStaticProps = async () => {
     console.error(e);
   }
   return {
-    props: { users },
+    props: { users }
   };
 };
 
@@ -32,9 +32,7 @@ export const Users: React.FunctionComponent<IUsersProps> = ({ users }) => {
       <ul className="list-inside list-disc">
         {users.map((user) => (
           <li key={user.id}>
-            <InternalLink href={`/jsonplaceholder/users/${user.id}`}>
-              {user.name}
-            </InternalLink>
+            <InternalLink href={`/jsonplaceholder/users/${user.id}`}>{user.name}</InternalLink>
           </li>
         ))}
       </ul>

@@ -19,7 +19,7 @@ export const getStaticPaths = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
     const users = await res.json();
     paths = users.map((user) => ({
-      params: { id: `${user.id}` },
+      params: { id: `${user.id}` }
     }));
   } catch (e) {
     console.error(e);
@@ -27,7 +27,7 @@ export const getStaticPaths = async () => {
 
   return {
     paths,
-    fallback: false,
+    fallback: false
   };
 };
 
@@ -35,16 +35,14 @@ export const getStaticProps = async ({ params }: Params) => {
   let user = {};
 
   try {
-    const res = await fetch(
-      `https://jsonplaceholder.typicode.com/users/${params.id}`
-    );
+    const res = await fetch(`https://jsonplaceholder.typicode.com/users/${params.id}`);
     user = await res.json();
   } catch (e) {
     console.error(e);
   }
 
   return {
-    props: { user },
+    props: { user }
   };
 };
 

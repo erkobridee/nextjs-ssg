@@ -11,16 +11,12 @@ export const JsonPlaceholder: React.FunctionComponent = () => {
   return (
     <LayoutJsonPlaceholder className="space-y-4">
       <h1 className="mt-8 text-xl">
-        <TargetBlankLink href="https://jsonplaceholder.typicode.com/">
-          JSON Placeholder
-        </TargetBlankLink>
+        <TargetBlankLink href="https://jsonplaceholder.typicode.com/">JSON Placeholder</TargetBlankLink>
       </h1>
 
       <ul className="list-inside list-disc">
         <li>
-          <InternalLink href="/jsonplaceholder/users">
-            {t('Users')}
-          </InternalLink>
+          <InternalLink href="/jsonplaceholder/users">{t('Users')}</InternalLink>
         </li>
       </ul>
 

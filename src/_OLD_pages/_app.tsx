@@ -14,9 +14,7 @@ import 'i18n';
 import 'styles/globals.scss';
 
 const SafeHydrate: FunctionComponent = ({ children }) => (
-  <div suppressHydrationWarning>
-    {typeof window === 'undefined' ? null : children}
-  </div>
+  <div suppressHydrationWarning>{typeof window === 'undefined' ? null : children}</div>
 );
 
 export const App: FunctionComponent<AppProps> = ({ Component, pageProps }) => (

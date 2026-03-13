@@ -11,11 +11,7 @@ export default class Document extends NextDocument {
 
           <link rel="shortcut icon" href={updateAssetsPrefix('favicon.ico')} />
 
-          <link
-            rel="preconnect"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/"
-            crossOrigin=""
-          />
+          <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/" crossOrigin="" />
 
           <link
             rel="stylesheet"
