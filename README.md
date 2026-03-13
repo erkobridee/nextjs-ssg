@@ -1,5 +1,7 @@
 # Next.js (SSG) + Tailwind CSS (postcss, sass, clsx) + TypeScript + i18next : Starter
 
+> 🚧 IN PROGRESS: [Update the Next.js version #708](https://github.com/erkobridee/nextjs-ssg/issues/708)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 `npx create-next-app nextjs-ssg --yes`
@@ -84,8 +86,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ### TypeScript
 
-`npm install --save-dev typescript @types/react @types/node`
-
 - [TypeScript Language](https://www.typescriptlang.org/)
 
 - React with TypeScript
@@ -93,26 +93,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
   - [useTypescript — A Complete Guide to React Hooks and TypeScript](https://levelup.gitconnected.com/usetypescript-a-complete-guide-to-react-hooks-and-typescript-db1858d1fb9c)
 
-- [Next.js - Basic Features: TypeScript](https://nextjs.org/docs/basic-features/typescript)
-
-- [Next.js TypeScript Types](https://nextjs.org/learn/excel/typescript/nextjs-types)
-  - [TypeScript Next.js example](https://github.com/vercel/next.js/tree/canary/examples/with-typescript)
-
-- [Using Next.js with TypeScript | LogRocket](https://blog.logrocket.com/using-next-js-with-typescript/) - 2020/12/18
-
-- [How to setup NextJS with TypeScript and ESLint + prettier | De Code Natura](https://decodenatura.com/how-to-set-up-nextjs-typescript-eslint-prettier/) - 2020/05/18
+- [Configuration: TypeScript | Next.js](https://nextjs.org/docs/app/api-reference/config/typescript)
 
 ### Testing
 
-- [Testing | Next.js Docs](https://nextjs.org/docs/testing)
+- [Guides: Testing | Next.js Docs](https://nextjs.org/docs/app/guides/testing)
 
-- [How to Set Up Jest and React Testing Library with Next.js | Kyrell Dixon](https://www.kyrelldixon.com/blog/setup-jest-and-react-testing-library-with-nextjs)
-
-- [How to create Next.js project with TypeScript, Jest, React Testing Lib | Night Zen](https://nightzen.dev/how-to-create-a-nextjs-project-with-typescript-jest-react-testing-library-and-test-renderer) - 2021/07/31
-
-- [How to Setup Next.js + TypeScript + Eslint + Storybook + Jest + Enzyme - by Caelin Sutch | JavaScript in Plain English](https://javascript.plainenglish.io/how-to-setup-next-js-typescript-eslint-storybook-jest-enzyme-610451591df0) - 2020/12/31
+- [Testing: Vitest | Next.js Docs](https://nextjs.org/docs/app/guides/testing/vitest)
 
 ### i18n
+
+**TODO:** review and update these links
 
 > the next.js doesn't support natively i18n on the static site generation on the v10 - [i18n with next export calls getStaticProps for each defined lang, but then errors
 > #18318](https://github.com/vercel/next.js/issues/18318#issuecomment-723984723)
@@ -149,24 +140,50 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ### TailwindCSS
 
 - [TailwindCSS](https://tailwindcss.com/)
-  - [Using PostCSS as your preprocessor | TailwindCSS Docs](https://tailwindcss.com/docs/using-with-preprocessors#using-post-css-as-your-preprocessor)
+  - [Installing Tailwind CSS with PostCSS | Tailwind CSS](https://tailwindcss.com/docs/installation/using-postcss)
     - [[GitHub] tailwindlabs/prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
-      - [Automatic Class Sorting with Prettier - Tailwind CSS](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
+      - [Class sorting with Prettier | Editor setup - Getting started - Tailwind CSS](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
 
-- [Craft Scalable, Custom-Made Interfaces with Tailwind CSS | egghead.io](https://egghead.io/courses/craft-scalable-custom-made-interfaces-with-tailwind-css-8dfee898)
+- [Guides: PostCSS | Next.js Docs](https://nextjs.org/docs/pages/guides/post-css) - Extend the PostCSS config and plugins added by Next.js with your own.
 
-- [Connecting React 17, TypeScript, Tailwind CSS, NextJS Into Developers Friendly Application | Hacker Noon](https://hackernoon.com/connecting-react-17-typescript-tailwind-css-nextjs-into-developers-friendly-application-cj283wpv)
+- [[YouTube] Building a Headless Ecommerce Store with Tailwind CSS, Shopify, and Next.js - Tailwind Labs](https://www.youtube.com/watch?v=xNMYz74zNHM) (2021/07/21)
 
-- [Customizing PostCSS Config | Next.js Docs](https://nextjs.org/docs/advanced-features/customizing-postcss-config)
+<!--
 
-- [[YouTube] Building a Headless Ecommerce Store with Tailwind CSS, Shopify, and Next.js - Tailwind Labs](https://www.youtube.com/watch?v=xNMYz74zNHM)
+packages installed related to the next.js v16
 
-### pt_Br
 
-- [[YouTube] Como inicio meus apps com ReactJS? Next.js, TypeScript, ESLint e Styled Components | Code/Drops #50](https://www.youtube.com/watch?v=1nVUfZg2dSA)
+npm i -S \
+  next \
+  react \
+  react-dom \
+  react-i18next \
+  i18next \
+  i18next-browser-languagedetector
 
-- [[YouTube] Serverless com ReactJS e Next.js na Vercel | Code/Drops #54](https://www.youtube.com/watch?v=Cz55Jmhfw84)
 
-- [[YouTube] Essa feature fez o Next.js ser o framework mais popular | Code/Drops #59](https://www.youtube.com/watch?v=u1kCtkVR7cE)
+npm i -D \
+  @tailwindcss/postcss \
+  @types/node \
+  @types/react \
+  @types/react-dom \
+  clsx \
+  eslint \
+  eslint-config-next \
+  eslint-config-prettier \
+  prettier \
+  prettier-plugin-tailwindcss \
+  serve \
+  tailwind-merge \
+  tailwindcss \
+  typescript \
+  cross-env \
+  gh-pages \
+  is-ci \
+  lint-staged \
+  npm-run-all2 \
+  rimraf \
+  serve \
+  simple-git-hooks
 
-- [[YouTube] Como fazer SEO com React, NextJS e Deploy estático feat. Dicas de Performance | Pokedex](https://www.youtube.com/watch?v=c8mVlakBESE)
+-->
