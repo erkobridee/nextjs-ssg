@@ -1,4 +1,4 @@
-# Next.js (SSG) + Tailwind CSS (postcss, sass, clsx) + TypeScript + i18next : Starter
+# Next.js (SSG) + Tailwind CSS (postcss, clsx, tailwind-merge) + TypeScript + i18next : Starter
 
 > 🚧 IN PROGRESS: [Update the Next.js version #708](https://github.com/erkobridee/nextjs-ssg/issues/708)
 
@@ -103,16 +103,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ### i18n
 
-**TODO:** review and update these links
-
-> the next.js doesn't support natively i18n on the static site generation on the v10 - [i18n with next export calls getStaticProps for each defined lang, but then errors
-> #18318](https://github.com/vercel/next.js/issues/18318#issuecomment-723984723)
->
-> said that, we need to use the react side i18n approach
-
-`npm i --save i18next i18next-browser-languagedetector react-i18next`
+- [Guides: Internationalization | Next.js Docs](https://nextjs.org/docs/app/guides/internationalization)
 
 - [i18next](https://www.i18next.com/)
+  - `npm i -S i18next i18next-browser-languagedetector react-i18next`
+
   - [react-i18next](https://react.i18next.com/)
 
   - [i18next-browser-languagedetector | npm](https://www.npmjs.com/package/i18next-browser-languagedetector)
