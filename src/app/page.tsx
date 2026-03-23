@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import Footer from '~/components/Footer';
+
 import redefineUrl from '~/utils/redefineUrl';
 import { isProduction } from '~/utils/settings';
 
@@ -78,11 +80,7 @@ export default function Home() {
         </div>
 
         <div className="flex w-full gap-2 border-t border-gray-200 py-2">
-          <span>
-            <strong>TODO:</strong>
-          </span>
-
-          <span>define the footer</span>
+          <Footer />
         </div>
       </main>
     </div>
