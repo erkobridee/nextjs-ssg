@@ -1,0 +1,19 @@
+{
+  "Hello": "Hello",
+  "Welcome to React": "Welcome to React, react-i18next and Next.js",
+  "static site generation": "static site generation",
+  "Powered by": "Powered by",
+  "Samples": "Samples",
+  "Users": "Users",
+  "User": "User",
+  "Home": "Home",
+  "Back": "Back",
+  "Documentation": "Documentation",
+  "Learn": "Learn",
+  "Examples": "Examples",
+  "Deploy": "Deploy",
+  "Find in-depth information about Next.js features and API.": "Find in-depth information about Next.js features and API.",
+  "Learn about Next.js in an interactive course with quizzes!": "Learn about Next.js in an interactive course with quizzes!",
+  "Discover and deploy boilerplate example Next.js projects.": "Discover and deploy boilerplate example Next.js projects.",
+  "Instantly deploy your Next.js site to a public URL with Vercel.": "Instantly deploy your Next.js site to a public URL with Vercel."
+}
