@@ -34,10 +34,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:ci": "cross-env GH_PAGE=true next build",
     "start": "next start",
     "lint": "eslint",
     "prettify": "prettier --write .",
-    "preview": "serve out -l 1234"
+    "preview": "serve out -l 1234",
+    "predeploy:gh-pages": "touch out/.nojekyll",
+    "deploy:gh-pages": "gh-pages -d out --dotfiles",
+    "deploy": "run-s build:ci deploy:gh-pages"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,md,html,css,scss}": "prettier --write",
@@ -56,7 +60,7 @@
     "react-i18next": "16.5.8"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "4.2.1",
+    "@tailwindcss/postcss": "4.2.2",
     "@types/node": "25.5.0",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
@@ -75,7 +79,7 @@
     "serve": "14.2.6",
     "simple-git-hooks": "2.13.1",
     "tailwind-merge": "3.5.0",
-    "tailwindcss": "4.2.1",
+    "tailwindcss": "4.2.2",
     "typescript": "5.9.3"
   }
 }
