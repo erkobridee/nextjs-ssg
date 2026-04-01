@@ -2,26 +2,34 @@
 
 import Image from 'next/image';
 
+import Container from '~/components/Container';
 import TargetBlankLink from '~/components/TargetBlankLink';
+
+//----------------------------------------------------------------------------//
 
 export function Footer() {
   return (
-    <div className="flex w-full justify-center gap-2">
+    <Container as="footer" className="flex items-center justify-center gap-2 border-t border-gray-200 py-2">
       <span>Powered by</span>
 
       <TargetBlankLink href="https://nextjs.org/">
-        <Image width={67} height={20} src="https://img.shields.io/badge/-NextJS-000?&logo=next.js" alt="Next.js Logo" />
+        <Image
+          width={91}
+          height={21}
+          src="https://img.shields.io/badge/-NextJS_v16-000?&logo=next.js"
+          alt="Next.js Logo"
+        />
       </TargetBlankLink>
 
       <TargetBlankLink href="https://tailwindcss.com/">
         <Image
           width={97}
-          height={20}
+          height={21}
           src="https://img.shields.io/badge/-TailwindCSS-000?&logo=tailwindcss"
           alt="TailwindCSS Logo"
         />
       </TargetBlankLink>
-    </div>
+    </Container>
   );
 }
 

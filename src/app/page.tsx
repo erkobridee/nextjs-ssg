@@ -1,24 +1,37 @@
 import Image from 'next/image';
 
+import Container from '~/components/Container';
 import Footer from '~/components/Footer';
+import TargetBlankLink from '~/components/TargetBlankLink';
 
+import cn from '~/utils/cn';
 import redefineUrl from '~/utils/redefineUrl';
 import { isProduction } from '~/utils/settings';
 
 import hello from '@/public/hello.json';
 
+//----------------------------------------------------------------------------//
+
+const Styles = {
+  LINK_TEXT: 'font-medium text-zinc-950 dark:text-zinc-50'
+} as const;
+
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="xs:items-start flex min-h-screen w-full max-w-3xl flex-col items-center justify-between gap-6 bg-white px-16 py-16 lg:py-32 dark:bg-black">
-        <div className="flex w-full gap-2 border-b border-gray-200 py-2">
-          <span>
-            <strong>TODO:</strong>
-          </span>
+    <div className={cn('font-sans', 'min-h-screen', 'flex flex-col items-center', 'bg-zinc-50 dark:bg-black')}>
+      <Container as="header" className="flex gap-2 border-b border-gray-200 py-2">
+        <span>
+          <strong>TODO:</strong>
+        </span>
 
-          <span>define the header</span>
-        </div>
+        <span>define the header</span>
+      </Container>
 
+      <Container
+        as="main"
+        outerClassName="grow"
+        className="xs:items-start flex flex-col items-center justify-between gap-6 bg-white px-16 py-16 lg:py-32 dark:bg-black"
+      >
         <Image
           className="dark:invert"
           src={redefineUrl('/next.svg')}
@@ -37,28 +50,27 @@ export default function Home() {
 
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             Looking for a starting point or more instructions? Head over to{' '}
-            <a href="https://vercel.com/templates" className="font-medium text-zinc-950 dark:text-zinc-50">
+            <TargetBlankLink href="https://vercel.com/templates" className={Styles.LINK_TEXT}>
               Templates
-            </a>{' '}
+            </TargetBlankLink>{' '}
             or the{' '}
-            <a href="https://nextjs.org/learn" className="font-medium text-zinc-950 dark:text-zinc-50">
+            <TargetBlankLink href="https://nextjs.org/learn" className={Styles.LINK_TEXT}>
               Learning
-            </a>{' '}
+            </TargetBlankLink>{' '}
             center.
           </p>
         </div>
 
-        <div>
-          <code className="rounded-[5px] bg-gray-100 p-1 font-mono text-[1.1rem] text-zinc-950">hello.json</code> -{' '}
-          {hello.message}
+        <div className="flex items-center gap-1">
+          <code className="rounded-[5px] bg-gray-100 p-1 font-mono text-[1.1rem] text-zinc-950">hello.json</code>
+          <span>-</span>
+          <span>{hello.message}</span>
         </div>
 
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
+          <TargetBlankLink
             className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] md:w-39.5 dark:hover:bg-[#ccc]"
             href="https://vercel.com/new"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <Image
               className="dark:invert"
@@ -68,21 +80,18 @@ export default function Home() {
               height={16}
             />
             Deploy Now
-          </a>
-          <a
+          </TargetBlankLink>
+
+          <TargetBlankLink
             className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/8 px-5 transition-colors hover:border-transparent hover:bg-black/4 md:w-39.5 dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
             href="https://nextjs.org/docs"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             Documentation
-          </a>
+          </TargetBlankLink>
         </div>
+      </Container>
 
-        <div className="flex w-full gap-2 border-t border-gray-200 py-2">
-          <Footer />
-        </div>
-      </main>
+      <Footer />
     </div>
   );
 }
