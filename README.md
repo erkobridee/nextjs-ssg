@@ -106,11 +106,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 - [Guides: Internationalization | Next.js Docs](https://nextjs.org/docs/app/guides/internationalization)
 
 - [i18next](https://www.i18next.com/)
-  - `npm i -S i18next i18next-browser-languagedetector react-i18next`
+  - `npm i -S i18next next-i18next react-i18next`
 
   - [react-i18next](https://react.i18next.com/)
 
-  - [i18next-browser-languagedetector | npm](https://www.npmjs.com/package/i18next-browser-languagedetector)
+  - [next-i18next](https://next.i18next.com/)
+    - [[GitHub] i18next/next-i18next](https://github.com/i18next/next-i18next) - The easiest way to translate your NextJs apps.
+
+- [Next.js i18n-Compatible Static HTML Export | Locize](https://www.locize.com/blog/next-i18n-static/)
+
+<!-- TODO: review the links below
+
+- [i18next-browser-languagedetector | npm](https://www.npmjs.com/package/i18next-browser-languagedetector)
 
 - [[GitHub] i18next/i18next-parser](https://github.com/i18next/i18next-parser)
 
@@ -132,6 +139,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 - [i18next-chained-backend | npm](https://www.npmjs.com/package/i18next-chained-backend)
 
+-->
+
 ### TailwindCSS
 
 - [TailwindCSS](https://tailwindcss.com/)
@@ -152,8 +161,9 @@ npm i -S \
   next \
   react \
   react-dom \
-  react-i18next \
   i18next \
+  next-i18next \
+  react-i18next \
   i18next-browser-languagedetector
 
 
