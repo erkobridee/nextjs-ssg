@@ -13,7 +13,8 @@ import hello from '@/public/hello.json';
 //----------------------------------------------------------------------------//
 
 const Styles = {
-  LINK_TEXT: 'font-medium text-zinc-950 dark:text-zinc-50'
+  LINK_TEXT: 'font-medium text-zinc-950 dark:text-zinc-50',
+  BASE_LINK_BUTTON: 'flex h-12 w-full items-center justify-center rounded-full transition-colors'
 } as const;
 
 export default function Home() {
@@ -69,7 +70,10 @@ export default function Home() {
 
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <TargetBlankLink
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] md:w-39.5 dark:hover:bg-[#ccc]"
+            className={cn(
+              Styles.BASE_LINK_BUTTON,
+              'gap-2 bg-foreground px-5 text-background hover:bg-[#383838] md:w-39.5 dark:hover:bg-[#ccc]'
+            )}
             href="https://vercel.com/new"
           >
             <Image
@@ -83,7 +87,10 @@ export default function Home() {
           </TargetBlankLink>
 
           <TargetBlankLink
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/8 px-5 transition-colors hover:border-transparent hover:bg-black/4 md:w-39.5 dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
+            className={cn(
+              Styles.BASE_LINK_BUTTON,
+              'border border-solid border-black/8 px-5 hover:border-transparent hover:bg-black/4 md:w-39.5 dark:border-white/[.145] dark:hover:bg-[#1a1a1a]'
+            )}
             href="https://nextjs.org/docs"
           >
             Documentation
