@@ -1,21 +1,8 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
 
-import cn from '~/utils/cn';
-
-import '~/styles/globals.css';
+import BaseLayout from '~/components/layout/Base';
 
 //----------------------------------------------------------------------------//
-
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin']
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin']
-});
 
 export const metadata: Metadata = {
   title: 'Static Next.js Sample',
@@ -27,9 +14,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={cn('antialiased', geistSans.variable, geistMono.variable)}>{children}</body>
-    </html>
-  );
+  return <BaseLayout>{children}</BaseLayout>;
 }
