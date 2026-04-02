@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
@@ -24,4 +24,15 @@ body {
   color: var(--foreground);
   /* font-family: Arial, Helvetica, sans-serif; */
   @apply font-sans;
+}
+
+@layer components {
+  .link,
+  .link-underline {
+    @apply text-zinc-950 dark:text-zinc-50;
+  }
+
+  .link-underline {
+    @apply underline;
+  }
 }
