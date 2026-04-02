@@ -2,8 +2,8 @@
 
 import Image from 'next/image';
 
-import Container from '~/components/Container';
-import TargetBlankLink from '~/components/TargetBlankLink';
+import Container from '~/components/layout/content/Container';
+import TargetBlankLink from '~/components/ui/TargetBlankLink';
 
 //----------------------------------------------------------------------------//
 

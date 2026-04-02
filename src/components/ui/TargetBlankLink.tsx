@@ -1,5 +1,7 @@
 import type { AnchorHTMLAttributes, Ref } from 'react';
 
+//----------------------------------------------------------------------------//
+
 interface TargetBlankLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   href: string;
   ref?: Ref<HTMLAnchorElement>;
