@@ -25,7 +25,7 @@ export default function Home() {
         <>
           <span className="link font-medium">Home</span>
 
-          <InternalLink href={redefineUrl('/jsonplaceholder')} className="link-underline">
+          <InternalLink href={'/jsonplaceholder'} className="link-underline">
             JSON Placeholder
           </InternalLink>
         </>

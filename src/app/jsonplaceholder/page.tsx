@@ -11,13 +11,13 @@ export function JSONPlaceholder() {
       className="xs:items-start flex flex-col items-center justify-between gap-6"
       header={
         <>
-          <InternalLink href={redefineUrl('/')} className="link-underline">
+          <InternalLink href={'/'} className="link-underline">
             Home
           </InternalLink>
 
           <span className="link font-medium">JSON Placeholder</span>
 
-          <InternalLink href={redefineUrl('/jsonplaceholder/users')} className="link-underline">
+          <InternalLink href={'/jsonplaceholder/users'} className="link-underline">
             Users
           </InternalLink>
         </>
