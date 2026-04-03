@@ -1,7 +1,5 @@
 import type { Metadata } from 'next';
 
-import BaseLayout from '~/components/layout/Base';
-
 //----------------------------------------------------------------------------//
 
 export const metadata: Metadata = {
