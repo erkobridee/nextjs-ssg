@@ -1,13 +1,13 @@
 // https://nextjs.org/docs/app/getting-started/caching#data-level-caching
-import { cacheLife } from 'next/cache';
+//import { cacheLife } from 'next/cache';
 
 import type { User } from '~/types/JSONPlaceholder';
 
 //----------------------------------------------------------------------------//
 
 export const getUsers = async () => {
-  'use cache';
-  cacheLife('minutes');
+  //'use cache';
+  //cacheLife('minutes');
 
   let users: User[] = [];
 
@@ -23,8 +23,8 @@ export const getUsers = async () => {
 };
 
 export const getUser = async (id: number | string) => {
-  'use cache';
-  cacheLife('minutes');
+  //'use cache';
+  //cacheLife('minutes');
 
   let user: User | undefined = undefined;
 
