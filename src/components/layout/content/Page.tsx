@@ -23,7 +23,7 @@ export function PageLayout({ headerClassName, className, header, children }: Pag
         </Container>
       )}
 
-      <Container as="main" outerClassName="grow" className={cn('bg-white px-16 py-16 dark:bg-black', className)}>
+      <Container as="main" outerClassName="grow" className={cn('bg-white p-8 dark:bg-black', className)}>
         {children}
       </Container>
 
