@@ -5,6 +5,9 @@ import { basePath, distDir } from './src/utils/settings';
 //----------------------------------------------------------------------------//
 
 const nextConfig: NextConfig = {
+  // https://nextjs.org/docs/app/getting-started/caching
+  cacheComponents: true,
+
   /**
    * Enable static exports.
    *
