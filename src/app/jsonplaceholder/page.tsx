@@ -1,8 +1,6 @@
 import PageLayout from '~/components/layout/content/Page';
 import InternalLink from '~/components/ui/InternalLink';
 
-import redefineUrl from '~/utils/redefineUrl';
-
 //----------------------------------------------------------------------------//
 
 export function JSONPlaceholder() {
