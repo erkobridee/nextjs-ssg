@@ -1,4 +1,6 @@
 // https://nextjs.org/docs/app/guides/migrating/app-router-migration#dynamic-paths-getstaticpaths
+import type { Metadata } from 'next';
+
 import PageLayout from '~/components/layout/content/Page';
 import InternalLink from '~/components/ui/InternalLink';
 
@@ -13,6 +15,11 @@ export async function generateStaticParams() {
 
   return params;
 }
+
+export const metadata: Metadata = {
+  title: 'User from JSON Placeholder | Static Next.js Sample',
+  description: 'Read mocked user from the json placeholder API'
+};
 
 export async function UserJSONPlaceholder({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;

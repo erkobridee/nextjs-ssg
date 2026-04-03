@@ -1,8 +1,15 @@
+import type { Metadata } from 'next';
+
 import PageLayout from '~/components/layout/content/Page';
 import InternalLink from '~/components/ui/InternalLink';
 import TargetBlankLink from '~/components/ui/TargetBlankLink';
 
 //----------------------------------------------------------------------------//
+
+export const metadata: Metadata = {
+  title: 'JSON Placeholder | Static Next.js Sample',
+  description: 'Rendering dynamic content loaded from the json placeholder API'
+};
 
 export function JSONPlaceholder() {
   return (

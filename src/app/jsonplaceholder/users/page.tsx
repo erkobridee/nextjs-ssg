@@ -1,9 +1,16 @@
+import type { Metadata } from 'next';
+
 import PageLayout from '~/components/layout/content/Page';
 import InternalLink from '~/components/ui/InternalLink';
 
 import { getUsers } from '~/api/jsonplaceholder';
 
 //----------------------------------------------------------------------------//
+
+export const metadata: Metadata = {
+  title: 'Users from JSON Placeholder | Static Next.js Sample',
+  description: 'Read mocked users from the json placeholder API'
+};
 
 export async function UsersJSONPlaceholder() {
   const users = await getUsers();
