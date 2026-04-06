@@ -1,18 +1,16 @@
-// https://nextjs.org/docs/app/getting-started/caching#data-level-caching
-//import { cacheLife } from 'next/cache';
+// https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+// https://nextjs.org/docs/app/api-reference/functions/fetch#optionsnextrevalidate
+// https://nextjs.org/docs/app/guides/caching-without-cache-components
 
 import type { User } from '~/types/JSONPlaceholder';
 
 //----------------------------------------------------------------------------//
 
 export const getUsers = async () => {
-  //'use cache';
-  //cacheLife('minutes');
-
   let users: User[] = [];
 
   try {
-    const res = await fetch('https://jsonplaceholder.typicode.com/users');
+    const res = await fetch('https://jsonplaceholder.typicode.com/users', { next: { revalidate: 3600 } });
 
     users = await res.json();
   } catch (e) {
@@ -23,13 +21,10 @@ export const getUsers = async () => {
 };
 
 export const getUser = async (id: number | string) => {
-  //'use cache';
-  //cacheLife('minutes');
-
   let user: User | undefined = undefined;
 
   try {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
+    const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`, { next: { revalidate: 3600 } });
 
     user = await res.json();
   } catch (e) {
