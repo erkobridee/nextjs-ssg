@@ -1,19 +1,16 @@
 import type { NextConfig } from 'next';
 
-import { basePath, distDir } from './src/utils/settings';
+import { output, basePath, distDir } from './src/utils/settings';
 
 //----------------------------------------------------------------------------//
 
 const nextConfig: NextConfig = {
-  // https://nextjs.org/docs/app/getting-started/caching
-  //cacheComponents: true,
-
   /**
    * Enable static exports.
    *
    * @see https://nextjs.org/docs/app/building-your-application/deploying/static-exports
    */
-  output: 'export',
+  output,
 
   /**
    * Redefines the output folder
