@@ -21,9 +21,9 @@ jobs:
         with:
           node-version: 22.x
 
-      - run: npm ci
+      - run: npm build ci
 
-      - run: npm run ci --if-present
+      - run: npm run build:ci --if-present
         env:
           CI: true
 
