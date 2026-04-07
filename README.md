@@ -1,7 +1,5 @@
 # Next.js (SSG) + Tailwind CSS (postcss, clsx, tailwind-merge) + TypeScript + i18next : Starter
 
-> 🚧 IN PROGRESS: [Update the Next.js version #708](https://github.com/erkobridee/nextjs-ssg/issues/708)
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 `npx create-next-app nextjs-ssg --yes`
@@ -24,27 +22,23 @@ npx create-next-app -e https://github.com/erkobridee/nextjs-ssg ${new project na
 
 [Creating a repository from a template | GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
 
-<!--
+## Commands
 
-TODO: review
+### Development
 
-## Getting Started
+`npm run dev`
 
-First, run the development server:
+### Build
 
-```bash
-npm start
-```
+`npm run build`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Preview
 
-### Bundle Analize
+`npm run preview`
 
-```bash
-npm run bundle-analyze
-```
+### GitHub Pages Deploy
 
--->
+`npm run deploy`
 
 ## Learn More
 
@@ -105,9 +99,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 - [Testing: Vitest | Next.js Docs](https://nextjs.org/docs/app/guides/testing/vitest)
 
+<!--
+
 ### i18n
 
 - [Guides: Internationalization | Next.js Docs](https://nextjs.org/docs/app/guides/internationalization)
+
+- [Next.js i18n-Compatible Static HTML Export | Locize](https://www.locize.com/blog/next-i18n-static/)
 
 - [i18next](https://www.i18next.com/)
   - `npm i -S i18next next-i18next react-i18next`
@@ -117,9 +115,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
   - [next-i18next](https://next.i18next.com/)
     - [[GitHub] i18next/next-i18next](https://github.com/i18next/next-i18next) - The easiest way to translate your NextJs apps.
 
-- [Next.js i18n-Compatible Static HTML Export | Locize](https://www.locize.com/blog/next-i18n-static/)
+  - [Next.js 16 App Router with i18next (2026 Update)](https://i18nexus.com/tutorials/nextjs/react-i18next) - A tutorial for setting up the Next.js 16 App Router with internationalized routing and react-i18next.
 
-<!-- TODO: review the links below
+- [[GitHub] amannn/next-intl](https://github.com/amannn/next-intl)
+
+  - [i18n in Next.js Static Site Generation: next-intl Quick Start Guide | Luka's Blog](https://aaakul.com/en/blog/coding/next-intl-guide)
+
+  - [[GitHub] azu/next-intl-example](https://github.com/azu/next-intl-example) - Next.js App Router + Static Exports(output: "export") + i18n(next-intl)
+
+TODO: review the links below
 
 - [i18next-browser-languagedetector | npm](https://www.npmjs.com/package/i18next-browser-languagedetector)
 
