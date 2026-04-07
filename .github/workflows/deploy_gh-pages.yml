@@ -16,14 +16,14 @@ jobs:
 
       - uses: actions/checkout@v4
 
-      - name: Use Node.js 16.x
+      - name: Use Node.js 22.x
         uses: actions/setup-node@v4
         with:
-          node-version: 16.x
+          node-version: 22.x
 
-      - run: npm ci
+      - run: npm build ci
 
-      - run: npm run ci --if-present
+      - run: npm run build:ci --if-present
         env:
           CI: true
 
