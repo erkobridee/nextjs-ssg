@@ -21,11 +21,7 @@ jobs:
         with:
           node-version: 22.x
 
-      - run: npm build ci
-
-      - run: npm run build:ci --if-present
-        env:
-          CI: true
+      - run: npm build:ci
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
