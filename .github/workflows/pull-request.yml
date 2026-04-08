@@ -21,7 +21,7 @@ jobs:
           node-version: 22.x
 
       - name: Node.js modules cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         id: restore-cache
         with:
           path: node_modules
