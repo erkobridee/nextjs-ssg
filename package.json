@@ -37,7 +37,7 @@
     "next": "16.2.10",
     "next-i18next": "16.0.8",
     "react": "19.2.8",
-    "react-dom": "19.2.7",
+    "react-dom": "19.2.8",
     "react-i18next": "16.5.8"
   },
   "devDependencies": {
