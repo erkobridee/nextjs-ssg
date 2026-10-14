@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 `npx create-next-app nextjs-ssg --yes`
 
-ℹ️&nbsp;&nbsp;use the [node.js](https://nodejs.org/en/) v22 LTS
+ℹ️&nbsp;&nbsp;use the [node.js](https://nodejs.org/en/) v24 LTS
 
 ## Bootstrap a new project using this template
 
