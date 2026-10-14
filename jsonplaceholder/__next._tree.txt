@@ -3,4 +3,4 @@
 :HL["/nextjs-ssg/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"jsonplaceholder","h":96,"c":"$Q2"}]]
-0:{"b":"RT1sngV-NUUxVKquFdsEB","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"zA7YqSkgZmwhpJKy_bYtl","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
