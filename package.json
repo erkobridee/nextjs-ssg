@@ -61,7 +61,7 @@
     "simple-git-hooks": "2.14.0",
     "tailwind-merge": "3.7.0",
     "tailwindcss": "4.3.3",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   },
   "allowScripts": {
     "simple-git-hooks@2.14.0": true,
