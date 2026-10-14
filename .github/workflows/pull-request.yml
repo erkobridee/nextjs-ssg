@@ -8,17 +8,26 @@ on:
     tags-ignore:
       - '*.*'
 
+concurrency:
+  group: pr-to-source-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+permissions:
+  pull-requests: write
+  checks: write
+
 jobs:
   check:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v7
+      - name: Checkout your repository using git
+        uses: actions/checkout@v7
 
-      - name: Use Node.js 22.x
+      - name: Use Node.js 24.x
         uses: actions/setup-node@v7
         with:
-          node-version: 22.x
+          node-version: 24.x
 
       - name: Node.js modules cache
         uses: actions/cache@v6
