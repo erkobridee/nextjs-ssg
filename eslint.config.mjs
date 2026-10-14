@@ -15,10 +15,7 @@ const eslintConfig = defineConfig([
     '.next/**',
     'out/**',
     'build/**',
-    'next-env.d.ts',
-
-    // TODO: review and remove it later
-    '_OLD_src/**'
+    'next-env.d.ts'
   ])
 ]);
 
