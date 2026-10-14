@@ -32,13 +32,13 @@
     "pre-commit": "npx lint-staged"
   },
   "dependencies": {
-    "i18next": "25.8.18",
+    "i18next": "26.4.5",
     "i18next-browser-languagedetector": "8.2.1",
     "next": "16.4.0",
     "next-i18next": "16.3.1",
     "react": "19.3.0",
     "react-dom": "19.3.0",
-    "react-i18next": "16.5.8"
+    "react-i18next": "17.0.16"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "4.3.3",
@@ -61,6 +61,10 @@
     "simple-git-hooks": "2.14.0",
     "tailwind-merge": "3.7.0",
     "tailwindcss": "4.3.3",
-    "typescript": "5.9.3"
+    "typescript": "6.0.3"
+  },
+  "allowScripts": {
+    "simple-git-hooks@2.14.0": true,
+    "unrs-resolver@1.11.1": true
   }
 }
