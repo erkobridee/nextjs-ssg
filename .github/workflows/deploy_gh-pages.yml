@@ -1,3 +1,11 @@
+# https://docs.astro.build/en/guides/deploy/github/#configure-a-github-action
+#
+# https://github.com/actions/upload-pages-artifact
+#
+# https://github.com/actions/download-artifact
+#
+# https://github.com/peaceiris/actions-gh-pages
+
 name: CI - build and deploy
 
 on:
@@ -16,23 +24,18 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v7
 
-      - name: Use Node.js 24.x
-        uses: actions/setup-node@v7
+      # https://github.com/pnpm/action-setup
+      - uses: pnpm/setup@v3
         with:
-          node-version: 24.x
+          version: 12
+          runtime: node@24
+          install: false
 
-      - name: Node.js modules cache
-        uses: actions/cache@v6
-        id: restore-cache
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      - name: Install dependencies
+        run: pnpm install
 
-      - name: Install Node.js dependencies
-        run: npm ci
-        if: steps.restore-cache.outputs.cache-hit != 'true'
-
-      - run: npm run build:ci
+      - name: Build
+        run: pnpm build:ci
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4

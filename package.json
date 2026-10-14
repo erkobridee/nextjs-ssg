@@ -5,7 +5,7 @@
   "scripts": {
     "unset:git-hooks-path": "git config --unset core.hooksPath",
     "simple-git-hooks": "npx simple-git-hooks",
-    "postinstall": "is-ci || npm run simple-git-hooks",
+    "postinstall": "is-ci || pnpm run simple-git-hooks",
     "clean:node_modules-cache": "rimraf node_modules/.cache",
     "clean:next-cache": "rimraf .next",
     "clean:next-output": "rimraf out",
@@ -62,9 +62,5 @@
     "tailwind-merge": "3.7.0",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3"
-  },
-  "allowScripts": {
-    "simple-git-hooks@2.14.0": true,
-    "unrs-resolver@1.12.2": true
   }
 }

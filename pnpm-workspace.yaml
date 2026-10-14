@@ -1,0 +1,5 @@
+allowBuilds:
+  simple-git-hooks: true
+  unrs-resolver: true
+minimumReleaseAgeExclude:
+  - i18next@26.4.5

@@ -24,23 +24,17 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v7
 
-      - name: Use Node.js 24.x
-        uses: actions/setup-node@v7
+      # https://github.com/pnpm/action-setup
+      - uses: pnpm/setup@v3
         with:
-          node-version: 24.x
+          version: 12
+          runtime: node@24
+          install: false
 
-      - name: Node.js modules cache
-        uses: actions/cache@v6
-        id: restore-cache
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-
-      - name: Install Node.js dependencies
-        run: npm ci
-        if: steps.restore-cache.outputs.cache-hit != 'true'
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Run the PR check
-        run: npm run pullrequest --if-present
+        run: pnpm pullrequest
         env:
           CI: true
