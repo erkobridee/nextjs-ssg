@@ -57,7 +57,7 @@
     "prettier": "3.9.10",
     "prettier-plugin-tailwindcss": "0.8.1",
     "rimraf": "6.1.4",
-    "serve": "14.2.6",
+    "serve": "14.2.7",
     "simple-git-hooks": "2.14.0",
     "tailwind-merge": "3.7.0",
     "tailwindcss": "4.3.4",
