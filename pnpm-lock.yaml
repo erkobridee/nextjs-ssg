@@ -18,8 +18,8 @@ importers:
         specifier: 16.4.6
         version: 16.4.6(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       next-i18next:
-        specifier: 16.4.6
-        version: 16.4.6(@types/react@19.3.0)(i18next@26.7.2(typescript@6.0.3))(next@16.4.6(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-i18next@17.1.13(i18next@26.7.2(typescript@6.0.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@6.0.3))(react@19.3.1)
+        specifier: 16.4.8
+        version: 16.4.8(@types/react@19.3.0)(i18next@26.7.2(typescript@6.0.3))(next@16.4.6(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-i18next@17.1.13(i18next@26.7.2(typescript@6.0.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@6.0.3))(react@19.3.1)
       react:
         specifier: 19.3.1
         version: 19.3.1
@@ -1912,10 +1912,11 @@ packages:
     resolution: {integrity: sha512-myRT3DiWPHqho5PrJaIRyaMv2kgYf0mUVgBNOYMuCH5Ki1yEiQaf/ZJuQ62nvpc44wL5WDbTX7yGJi1Neevw8w==}
     engines: {node: '>= 0.6'}
 
-  next-i18next@16.4.6:
-    resolution: {integrity: sha512-Nm/zOpgMB+rwsal6SWTEy1l4KPxPy6v7ckOTzX1uDfM08wNEK78kLlHByApwY+QUOBTB4Mu4wJIBdBQa/SLtsw==}
+  next-i18next@16.4.8:
+    resolution: {integrity: sha512-vXD1HgEEDENuk1xSV18ugx+g8zHSdJ1E1/q7S2k83sXO+ux9QH1HVHTUUiYzm4bxPhPcXlDiaeiSLSylycUWaA==}
     engines: {node: '>=20'}
     peerDependencies:
+      '@types/react': '*'
       i18next: '>= 23.7.13'
       i18next-icu: '>= 2.0.0'
       i18next-mf2: '>= 1.0.0'
@@ -1923,6 +1924,8 @@ packages:
       react: '>= 18.0.0'
       react-i18next: '>= 14.0.0'
     peerDependenciesMeta:
+      '@types/react':
+        optional: true
       i18next-icu:
         optional: true
       i18next-mf2:
@@ -4473,7 +4476,7 @@ snapshots:
 
   negotiator@0.6.4: {}
 
-  next-i18next@16.4.6(@types/react@19.3.0)(i18next@26.7.2(typescript@6.0.3))(next@16.4.6(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-i18next@17.1.13(i18next@26.7.2(typescript@6.0.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@6.0.3))(react@19.3.1):
+  next-i18next@16.4.8(@types/react@19.3.0)(i18next@26.7.2(typescript@6.0.3))(next@16.4.6(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-i18next@17.1.13(i18next@26.7.2(typescript@6.0.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@6.0.3))(react@19.3.1):
     dependencies:
       '@types/hoist-non-react-statics': 3.3.7(@types/react@19.3.0)
       hoist-non-react-statics: 3.3.2
@@ -4482,8 +4485,8 @@ snapshots:
       next: 16.4.6(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       react: 19.3.1
       react-i18next: 17.1.13(i18next@26.7.2(typescript@6.0.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@6.0.3)
-    transitivePeerDependencies:
-      - '@types/react'
+    optionalDependencies:
+      '@types/react': 19.3.0
 
   next@16.4.6(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1):
     dependencies:
