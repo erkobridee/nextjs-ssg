@@ -54,7 +54,7 @@
     "is-ci": "4.1.0",
     "lint-staged": "17.6.0",
     "npm-run-all2": "9.0.4",
-    "prettier": "3.10.0",
+    "prettier": "3.10.1",
     "prettier-plugin-tailwindcss": "0.8.1",
     "rimraf": "6.1.4",
     "serve": "14.2.7",
