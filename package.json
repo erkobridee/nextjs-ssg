@@ -59,7 +59,7 @@
     "rimraf": "6.1.4",
     "serve": "14.2.8",
     "simple-git-hooks": "2.14.0",
-    "tailwind-merge": "3.7.0",
+    "tailwind-merge": "3.7.1",
     "tailwindcss": "4.3.5",
     "typescript": "6.0.3"
   }
